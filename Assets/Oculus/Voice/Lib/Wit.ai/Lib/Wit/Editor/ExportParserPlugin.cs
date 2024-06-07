@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f5d4150d4be1430d1d60dfe6d54ef5172ad5ce164b4724be9607427cab378ab
-size 825
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+using System.IO.Compression;
+using Meta.WitAi.Data.Info;
+
+namespace Meta.WitAi.Lib
+{
+    /// <summary>
+    /// Parses the Wit.ai Export zip file
+    /// </summary>
+    public interface IExportParserPlugin
+    {
+        /// <summary>
+        /// Extracts the data specific to this plugin from the zip file
+        /// and adds it to the config.
+        /// </summary>
+        /// <param name="config">the configuration to modify</param>
+        /// <param name="zipArchive">the archive containing the data to extract</param>
+        void Process(IWitRequestConfiguration config, ZipArchive zipArchive);
+    }
+}

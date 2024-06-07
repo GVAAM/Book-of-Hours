@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c65c88146699c07d420e2e36d999539b69845652da56eec865412daf016678a
-size 411
+{
+    "name": "Meta.VoiceSDK.Mic.Common",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1c28d8b71ced07540b7c271537363cc6"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

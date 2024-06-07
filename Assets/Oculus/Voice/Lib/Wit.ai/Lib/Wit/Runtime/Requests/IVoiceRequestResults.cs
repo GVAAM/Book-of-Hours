@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:58ec94811c60bd94bbda934b1acf3b9679c665e6d68aca6b0f51035d64c154c2
-size 567
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Meta.Voice
+{
+    /// <summary>
+    /// The base interface for all request results
+    /// </summary>
+    public interface IVoiceRequestResults
+    {
+        /// <summary>
+        /// A message received from either an error
+        /// or a cancellation request
+        /// </summary>
+        string Message { get; }
+    }
+}

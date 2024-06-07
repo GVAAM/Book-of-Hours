@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27abe6be50fd33ae9b0b1ca9960b8072a20dc104dcc10a5826385264b6cba979
-size 338
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using Meta.WitAi.Events;
+
+namespace Meta.WitAi.Interfaces
+{
+    public interface ISpeechEvents
+    {
+
+    }
+}

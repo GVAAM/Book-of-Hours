@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:addf8e4ddf6011a179e12fc7a2bcd094eda3cac637e9da49e52e37e3e50d8be7
-size 394
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Oculus.Interaction.Deprecated
+{
+    [Obsolete("Auto-Training now happens on the server")]
+    public enum WitTrainingStatus
+    {
+    }
+}

@@ -1,3 +1,46 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b70bb2203b86ec2c02e243f2a29fe3cb7f5132d0c7650518b5d04fcfe8759217
-size 1193
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+
+public class MenuText : MonoBehaviour
+{
+
+    //controls the name of the folio displayed in the control panel
+
+    //takes in list of names from inspector
+    [SerializeField] private List<string> stateList = new List<string>();
+    [SerializeField] private BookManager bookManager;
+    private int stateNum = 0;
+
+
+    private void Start()
+    {
+        if (stateList.Count >= 0)
+        {
+            GetComponent<TextMeshPro>().text = stateList[0]; // always start at the first page
+        }
+        if (bookManager == null)
+        {
+            bookManager = FindObjectOfType<BookManager>();
+        }
+
+    }
+
+    // update based on code in PagesideTextManager that recognizes if the page has been turned
+    public void updateState()
+    {
+        
+        stateNum = bookManager.getLeftPageNum(); // get the left page number
+        GetComponent<TextMeshPro>().text = stateList[stateNum];
+    }
+
+
+    public void ResetExperienceMT()
+    {
+        stateNum = 0;
+        GetComponent<TextMeshPro>().text = stateList[stateNum];
+    }
+
+}

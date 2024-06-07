@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e3f959dc11cfe714a778626d2556539447c867f3cb2b9be078ef70c802967b8f
-size 377
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Oculus.Interaction.Deprecated
+{
+    [Obsolete("Sample moved to Samples/TTSVoices")]
+    public class TTSStreamToggle { }
+}

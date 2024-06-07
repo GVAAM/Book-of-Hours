@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4256f3b04a776196c4d89baf8e2ee12655339f367997ffb77af73e34dda8f708
-size 350
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System.Runtime.CompilerServices;
+
+[assembly:InternalsVisibleTo("Meta.WitAi.Lib.Editor")]
+[assembly:InternalsVisibleTo("Meta.WitAi")]

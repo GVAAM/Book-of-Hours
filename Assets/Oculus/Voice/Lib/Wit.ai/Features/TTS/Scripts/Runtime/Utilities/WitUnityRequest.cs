@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6aa9929ba420130b95f9ea9033197c1dcc320c1f5aa93a4424f091ba6e945b7d
-size 369
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Oculus.Interaction.Deprecated
+{
+    [Obsolete("Replaced by Meta.WitAi.WitRequestUtility")]
+    public class WitUnityRequest { }
+}

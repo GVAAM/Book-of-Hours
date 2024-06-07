@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8bace03222ddac912557a509dea3f73deaccf429bc085075bd14542ac7aed034
-size 377
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Oculus.Interaction.Deprecated
+{
+    [Obsolete("Replaced by Meta.WitAi.Data.Info.WitEntityRoleInfo")]
+    public class WitEntityRole { }
+}

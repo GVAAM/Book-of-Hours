@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6bd554cde842e6f00883fa2a005c1ebd323cf2dcd9e4d11981b0dfc52be999ae
-size 588
+fileFormatVersion: 2
+guid: 4446b7192d8bf914ebaf797b64fe8b86
+timeCreated: 1454769561
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - BookPanel: {instanceID: 0}
+  - background: {instanceID: 0}
+  - ClippingPlane: {instanceID: 0}
+  - NextPageClip: {instanceID: 0}
+  - Shadow: {instanceID: 0}
+  - ShadowLTR: {instanceID: 0}
+  - Left: {instanceID: 0}
+  - LeftNext: {instanceID: 0}
+  - Right: {instanceID: 0}
+  - RightNext: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

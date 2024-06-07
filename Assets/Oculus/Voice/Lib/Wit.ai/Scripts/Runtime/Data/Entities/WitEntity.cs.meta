@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c0b710feecc6e2969541d6c9e546dce41829943fc30612101e1cda676398bd51
-size 287
+﻿fileFormatVersion: 2
+guid: 8b8d1931ec6f428ba4f36da3ddcb15f3
+MonoImporter:
+  labels: ["oculus_interaction_deprecated"]
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData:
+  assetBundleName:
+  assetBundleVariant:

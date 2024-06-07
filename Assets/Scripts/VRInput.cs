@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b4723d9fab4fa347c27c361d5d445b51245d0254166a50100e7ffa89c5c1e67
-size 1053
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.EventSystems;
+
+public class VRInput : BaseInput
+{
+    public Camera eventCamera = null;
+
+    public OVRInput.Button clickButton = OVRInput.Button.PrimaryIndexTrigger;
+    public OVRInput.Controller controller = OVRInput.Controller.All;
+    protected override void Awake()
+    {
+        GetComponent<BaseInputModule>().inputOverride = this;
+    }
+
+    public override bool GetMouseButton(int button)
+    {
+        return OVRInput.Get(clickButton,controller);
+    }
+    
+    public override bool GetMouseButtonDown(int button)
+    {
+        return OVRInput.GetDown(clickButton,controller);
+    }
+    
+    public override bool GetMouseButtonUp(int button)
+    {
+        return OVRInput.GetUp(clickButton,controller);
+    }
+    
+    public override Vector2 mousePosition
+    {
+        get
+        {
+            return new Vector2(eventCamera.pixelWidth / 2, eventCamera.pixelHeight / 2);
+        }
+    }
+}

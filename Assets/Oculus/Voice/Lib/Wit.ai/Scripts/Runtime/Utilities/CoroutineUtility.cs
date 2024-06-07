@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0cba05e8348cd9a75c434ef8c488acf63e9c3d806c31d188dfe062fcdef58b04
-size 369
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Oculus.Interaction.Deprecated
+{
+    [Obsolete("Replaced by Meta.WitAi.CoroutineUtility")]
+    public class CoroutineUtility { }
+}

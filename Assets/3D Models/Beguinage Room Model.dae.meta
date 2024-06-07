@@ -1,3 +1,217 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e021535a0d8ab78d5a1556f5951c271227d0c4352880456666bbbb12c24f8479
-size 7390
+fileFormatVersion: 2
+guid: c4f7d43e515fdff4488e6d7f1623a252
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Bosse
+    second: {fileID: 2100000, guid: 1ad8f1d8432c59e409dd82aaf50c763b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Ceramic_gray
+    second: {fileID: 2100000, guid: b37ef8f60ca949446ba6001efc50b9bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Frosted_Clear_Glass
+    second: {fileID: 2100000, guid: fb04b929843b5804c9ef11474091a911, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Oak
+    second: {fileID: 2100000, guid: b4ddeea81929bdc47a061732d669ab2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Oak__1_
+    second: {fileID: 2100000, guid: 12fd10e7a3a17474394fd3b2f956097c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Oak_dark
+    second: {fileID: 2100000, guid: 84f7625b0d180c44caebc5fa36d52bc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Oak_dark__2_
+    second: {fileID: 2100000, guid: 669bfaeb602074048b8b02eb2a34ce0f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Oak_dark_polished
+    second: {fileID: 2100000, guid: 2ef0a8f423002b64eb64b0e103a6c3c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Off-White_Plaster
+    second: {fileID: 2100000, guid: 331264978261c5c46b3bfd54bb8774fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Off-White_Plaster__1_
+    second: {fileID: 2100000, guid: 4c2ea8e7465c1a342a49424e6535d0a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Plaster
+    second: {fileID: 2100000, guid: 118256ac408b78f4980a2b88dcaf02b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Plaster__1_
+    second: {fileID: 2100000, guid: ddc8356b5ba520146961501124234187, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Plaster__2_
+    second: {fileID: 2100000, guid: c15adc16ba071dc42b933a04f579be73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Plaster__3_
+    second: {fileID: 2100000, guid: c6bcf2dc4d907a6459809fec206cc2ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Plaster__4_
+    second: {fileID: 2100000, guid: 61d8e47b4215c354c846e66fe91a6e3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Plaster__5_
+    second: {fileID: 2100000, guid: 5a52ac0e1b7c99c4ba5b7b11d77b3992, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Poured_cement
+    second: {fileID: 2100000, guid: afc3b4be24d83ee4b892e782a8418903, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Room_Perspective
+    second: {fileID: 2100000, guid: d8e93a3284130b14b95d36b67cbde056, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-SW_old_blocks_random
+    second: {fileID: 2100000, guid: 4776d462c26eb6b40a4b2ae3d4517c5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Stretch_bond_bricks_washed
+    second: {fileID: 2100000, guid: 2943e916619970c408f5ae07e3764926, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-Window_Detail
+    second: {fileID: 2100000, guid: f87fba3b52dabf348b6143ca0b6e3f7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-masonrytexture_smooth_colored_pattern_y5617
+    second: {fileID: 2100000, guid: f49b617fb079bdf46ad441266aa54f15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: a0000000-0000-0000-0000-000000000000
+    second: {fileID: 2100000, guid: bb6122e0e51e2784b91a36e1adbf7a7a, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

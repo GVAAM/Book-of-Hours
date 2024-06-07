@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:88269543d4896ee537925f250fe68faf2ba064545202b92fe0cdc3d9b1413f06
-size 769
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+using UnityEngine.Events;
+
+public class MusicManager : MonoBehaviour
+{
+    [SerializeField] public List<AudioClip> MusicList = new List<AudioClip>();
+    [SerializeField] public List<string> MusicNameList = new List<string>();
+
+    [SerializeField] private AudioSource audioSource;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+    }
+
+    //update music in control panel
+    public void UpdateTrack(int i)
+    {
+        AudioClip clip = MusicList[i];
+        audioSource.clip = clip;
+        audioSource.Play();
+    }
+}

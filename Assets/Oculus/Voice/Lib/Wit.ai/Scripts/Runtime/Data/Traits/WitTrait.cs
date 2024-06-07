@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f2dc32c17df4262d4a0c8bffe0558cce699d6a748d0c5043aa59635fe9e917b2
-size 364
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Oculus.Interaction.Deprecated
+{
+    [Obsolete("Replaced by Meta.WitAi.Data.Info.WitTraitInfo")]
+    public class WitTrait { }
+}

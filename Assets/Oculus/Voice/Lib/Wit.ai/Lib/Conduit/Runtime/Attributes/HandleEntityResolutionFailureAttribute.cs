@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:addd2a7e4f0792859230a389966134938a426a6904ff3fb9a83cceda48811435
-size 408
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Oculus.Interaction.Deprecated
+{
+    [Obsolete("Replaced by HandleEntityResolutionFailure")]
+    public class HandleEntityResolutionFailureAttribute { }
+}

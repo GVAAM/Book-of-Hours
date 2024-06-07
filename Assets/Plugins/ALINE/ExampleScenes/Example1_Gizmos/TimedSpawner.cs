@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11671ea8bd8ca9af2cc6833b871233366297b9a3b65b5dbf0c6704e65d26d030
-size 718
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Drawing.Examples {
+	public class TimedSpawner : MonoBehaviour {
+		public float interval = 1;
+		public float lifeTime = 5;
+		public GameObject prefab;
+
+		// Start is called before the first frame update
+		IEnumerator Start () {
+			while (true) {
+				var go = GameObject.Instantiate(prefab, transform.position + Random.insideUnitSphere * 0.01f, Random.rotation);
+				StartCoroutine(DestroyAfter(go, lifeTime));
+				yield return new WaitForSeconds(interval);
+			}
+		}
+
+		IEnumerator DestroyAfter (GameObject go, float delay) {
+			yield return new WaitForSeconds(delay);
+			GameObject.Destroy(go);
+		}
+	}
+}

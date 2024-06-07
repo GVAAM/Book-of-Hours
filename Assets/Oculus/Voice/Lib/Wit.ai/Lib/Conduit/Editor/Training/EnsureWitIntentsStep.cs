@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a7e9f0e201032647ecd69511299b15448e253ba117c535d4bb893e46485de83
-size 400
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Oculus.Interaction.Deprecated
+{
+    [Obsolete("Auto-Training now happens on the server")]
+    internal class EnsureWitIntentsStep
+    {
+    }
+}

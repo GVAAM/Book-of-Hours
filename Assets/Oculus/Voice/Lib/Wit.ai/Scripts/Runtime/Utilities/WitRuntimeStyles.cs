@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c7c9adef0fabcb00dd81693a1e0c68597cf46b510f8fabd41f32a523ca81420
-size 376
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Utilities
+{
+    public class WitRuntimeStyles
+    {
+        // Header padding
+        public const float HeaderPaddingTop = 8f;
+    }
+}

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03ea5511a66c361a20a3e86b37a53785367f8f82c58b7c4f7ec45db55edff578
-size 361
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FeaturePage : MonoBehaviour
+{
+    [SerializeField] private Material page;
+    [SerializeField] private bool onLeft;
+
+
+    public Material getPage()
+    {
+        return page;
+    }
+
+    public bool isOnLeft()
+    {
+        return onLeft;
+    }
+
+}

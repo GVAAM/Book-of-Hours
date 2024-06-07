@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb849c05207998d14920bf89915d77bb05bbdde011d4ff546c90f804249d8b92
-size 311
+fileFormatVersion: 2
+guid: ee6b94f7bc105c24ea3746dc4141a7eb
+labels:
+- oculus_interaction_moved_e76d151a8c71e4d44a1072f66e27b038
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

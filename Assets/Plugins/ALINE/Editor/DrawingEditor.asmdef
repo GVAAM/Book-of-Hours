@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:100d8555b77acbb21e3757d9e64162fcc171c12b5c949c5d434a09276734bf27
-size 1050
+{
+    "name": "ALINEEditor",
+    "references": [
+        "GUID:de4e6084e6d474788bb8c799d6b461ec",
+        "GUID:774e21169c4ac4ec8a01db9cdb98d33b",
+        "GUID:f4059aaf6c60a4a58a177a2609feb769"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "MODULE_BURST",
+        "MODULE_MATHEMATICS",
+        "MODULE_COLLECTIONS"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.burst",
+            "expression": "1.0.4",
+            "define": "MODULE_BURST"
+        },
+        {
+            "name": "com.unity.mathematics",
+            "expression": "1.1.0",
+            "define": "MODULE_MATHEMATICS"
+        },
+        {
+            "name": "com.unity.collections",
+            "expression": "0.1.1-preview",
+            "define": "MODULE_COLLECTIONS"
+        }
+    ],
+    "noEngineReferences": false
+}

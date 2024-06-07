@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6e449c6cdba755fd0efa73cb4d0387224127cc83e25a61fdc284a90a57f59799
-size 373
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Oculus.Interaction.Deprecated
+{
+    [Obsolete("Sample moved to Samples/TTSVoices")]
+    public class TTSStatusLabel { }
+}

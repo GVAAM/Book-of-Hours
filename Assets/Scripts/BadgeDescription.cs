@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:933b4ef0f128a8c66dc698f7e9e639a37240bd7b07ea679b813a5b859d830a38
-size 549
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class BadgeDescription : MonoBehaviour
+{
+
+    public GameObject description;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        description.SetActive(false);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void DescOn()
+    {
+        description.SetActive(true);
+    }
+
+    public void DescOff()
+    {
+        description.SetActive(false);
+    }
+}

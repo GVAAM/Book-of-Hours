@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76a0c61da8c02811ced0fe3048fd2b58f6d866a5c9041c3cec90efd1c06852a8
-size 623
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine.Events;
+
+namespace Meta.WitAi.Events
+{
+    [Serializable]
+    public class WitByteDataEvent : UnityEvent<byte[], int, int> { }
+
+    public interface IWitByteDataReadyHandler
+    {
+        void OnWitDataReady(byte[] data, int offset, int length);
+    }
+
+    public interface IWitByteDataSentHandler
+    {
+        void OnWitDataSent(byte[] data, int offset, int length);
+    }
+}

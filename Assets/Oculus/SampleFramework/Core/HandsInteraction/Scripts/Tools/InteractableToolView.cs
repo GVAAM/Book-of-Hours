@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3107625490ed6defaa004cf6ed504a787fab0f5730b4429ced27296e6ac7372e
-size 1279
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * Licensed under the Oculus SDK License Agreement (the "License");
+ * you may not use the Oculus SDK except in compliance with the License,
+ * which is provided at the time of installation or download, or which
+ * otherwise accompanies this software in either electronic or hard copy form.
+ *
+ * You may obtain a copy of the License at
+ *
+ * https://developer.oculus.com/licenses/oculussdk/
+ *
+ * Unless required by applicable law or agreed to in writing, the Oculus SDK
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
+namespace OculusSampleFramework
+{
+    /// <summary>
+    /// The visual abstraction of an interactable tool.
+    /// </summary>
+    public interface InteractableToolView
+    {
+        InteractableTool InteractableTool { get; }
+        void SetFocusedInteractable(Interactable interactable);
+
+        bool EnableState { get; set; }
+
+        // Useful if you want to tool to glow in case it interacts with an object.
+        bool ToolActivateState { get; set; }
+    }
+}

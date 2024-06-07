@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:172b8de6a21ed193d03d7b4d0f36be01bb4cd58bf285c8c2909f1ef399129ccf
-size 235
+fileFormatVersion: 2
+guid: 12e06f8248eb42d40a7e4999616b9f44
+importerOverride: UnityEditor.CoreModule:UnityEditor:TextScriptImporter
+PackageManifestImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

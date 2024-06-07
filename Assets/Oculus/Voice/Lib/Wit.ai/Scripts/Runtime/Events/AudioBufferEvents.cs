@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3cd3112071c014b60dd4fa93f6d301a8814e1334a16491c9ba44f7fc15325cd0
-size 858
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using Meta.WitAi.Data;
+using UnityEngine;
+
+namespace Meta.WitAi.Events
+{
+    [Serializable]
+    public class AudioBufferEvents
+    {
+        public delegate void OnSampleReadyEvent(RingBuffer<byte>.Marker marker, float levelMax);
+        public OnSampleReadyEvent OnSampleReady;
+
+        [Tooltip("Called when the volume level of the mic input has changed")]
+        public WitMicLevelChangedEvent OnMicLevelChanged = new WitMicLevelChangedEvent();
+
+        [Header("Data")]
+        public WitByteDataEvent OnByteDataReady = new WitByteDataEvent();
+        public WitByteDataEvent OnByteDataSent = new WitByteDataEvent();
+    }
+}

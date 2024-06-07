@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:00ecacddd248f826cf375958db5b607ed351c3cfa233c651b1cc0133442f36f5
-size 435
+using UnityEngine;
+
+public class ListComponents : MonoBehaviour
+{
+    void Start()
+    {
+        // Get all components attached to the GameObject
+        Component[] components = GetComponents<Component>();
+
+        // Iterate through each component and print its type name
+        foreach (Component component in components)
+        {
+            Debug.Log("Component: " + component.GetType().Name);
+        }
+    }
+}

@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:89ca12721a32f924f57f3b41c49f98a1e8ad07bf2200ab398471e1dc8a73eb6f
-size 1240
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using System.Text;
+using Meta.WitAi.Data.Info;
+using UnityEditor;
+namespace Meta.WitAi.Data.Configuration.Tabs
+{
+    public abstract class WitConfigurationEditorTab
+    {
+        // the WitConfigurationData type relevant to this tab
+        public abstract Type DataType { get; }
+
+        public abstract string TabID { get; }
+        public abstract int TabOrder { get; }
+        public abstract string TabLabel { get; }
+        public abstract string MissingLabel { get; }
+        public abstract bool ShouldTabShow(WitAppInfo appInfo);
+        public virtual bool ShouldTabShow(WitConfiguration configuration) { return false; }
+
+        public virtual string GetPropertyName(string tabID)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("_appInfo");
+            sb.Append($".{TabID}");
+            return sb.ToString();
+        }
+        public virtual string GetTabText(bool titleLabel)
+        {
+            return titleLabel ? TabLabel : MissingLabel;
+        }
+    }
+}

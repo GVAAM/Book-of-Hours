@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0ee16a202201261f8acb9c4fceef60c57e55aacfcfdd593a16a7cbda2b319e4a
-size 743
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using UnityEditor;
+using UnityEngine;
+
+namespace Meta.Voice.Hub.Content
+{
+    public class Sample : ScriptableObject
+    {
+        [Header("Content")]
+        public string title;
+        [TextArea]
+        public string description;
+        public Texture2D tileImage;
+        public Texture2D screenshot;
+
+        [Header("Resource Paths")]
+        public SceneAsset sceneReference;
+        public string packageSampleName;
+        public string sampleSetId;
+        public float priority;
+    }
+}

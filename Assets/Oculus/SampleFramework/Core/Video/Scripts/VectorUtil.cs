@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a4192cab1a7640d8e7345f3c9d47fe091ae854f0fed9074bdb67e30902e4a3ab
-size 322
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public static class VectorUtil
+{
+    public static Vector4 ToVector(this Rect rect)
+    {
+        return new Vector4(rect.x, rect.y, rect.width, rect.height);
+    }
+}

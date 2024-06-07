@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:df2ef9fde00e535f66cdb1191e09537ec60e2d6b8c9f482b414b4989044dfc37
-size 514
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine.Events;
+
+namespace Meta.Voice
+{
+    [Serializable]
+    public class NLPRequestEvents<TUnityEvent>
+        : NLPAudioRequestEvents<TUnityEvent>,
+            INLPTextRequestEvents<TUnityEvent>
+        where TUnityEvent : UnityEventBase
+    {
+
+    }
+}

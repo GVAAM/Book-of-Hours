@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:34922b70e7dfa5093041d3216ec6971b6237394bc6e901486ae2dbb05b0a5047
-size 382
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Oculus.Interaction.Deprecated
+{
+    [Obsolete("Not required any more")]
+    internal abstract class ProcessStep
+    {
+    }
+}

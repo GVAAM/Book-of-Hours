@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf60ed35064afe9b973438bfb87027872a1c02d711ba193e504b4bfa9ff9afe6
-size 536
+{
+    "name": "Meta.Voice.Samples.Dictation",
+    "references": [
+        "GUID:1c28d8b71ced07540b7c271537363cc6",
+        "GUID:4504b1a6e0fdcc3498c30b266e4a63bf",
+        "GUID:910a956078d2ff4429c717211dcfaecb",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

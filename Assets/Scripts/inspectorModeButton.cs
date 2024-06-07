@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3cd8c2dfb0021d752fb27291f7644372a88a0bbc8c6bb31bdbfb9318e5644fc3
-size 866
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+
+public class inspectorModeButton : MonoBehaviour
+{
+    [SerializeField] private GameObject previousButton;
+    [SerializeField] private GameObject nextButton;
+    [SerializeField] private GameObject modeButtonText;
+    private bool isPaired = true;
+
+    public void ToggleInspectorMode()
+    {
+        isPaired = !isPaired; 
+        if (isPaired)
+        {
+            modeButtonText.GetComponent<TextMeshPro>().text = "PAIRED";
+            previousButton.SetActive(false);
+            nextButton.SetActive(false);
+        }
+        else
+        {
+            modeButtonText.GetComponent<TextMeshPro>().text = "UNPAIRED";
+            previousButton.SetActive(true);
+            nextButton.SetActive(true);
+        }
+        
+        
+    }
+}

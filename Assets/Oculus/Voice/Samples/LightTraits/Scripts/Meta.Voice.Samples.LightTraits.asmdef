@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3a106121e70099ac776ca7a7929e3a72ba2b0deb3f710e6138814af528283f31
-size 440
+{
+    "name": "Meta.Voice.Samples.LightTraits",
+    "references": [
+        "GUID:4504b1a6e0fdcc3498c30b266e4a63bf",
+        "GUID:1c28d8b71ced07540b7c271537363cc6"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

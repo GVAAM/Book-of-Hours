@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:261b864fafa5eebcf2b320e9cd36823e11a26a3fd159133715a1d3577a1db054
-size 438
+{
+    "name": "Meta.Voice.Samples.TTSVoices",
+    "references": [
+        "GUID:8bbcefc153e1f1b4a98680670797dd16",
+        "GUID:1c28d8b71ced07540b7c271537363cc6"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

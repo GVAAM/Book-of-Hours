@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96b56e7c0c899bd076ea1770357717cacb6447d7080d485e8807d4b734b2b612
-size 600
+fileFormatVersion: 2
+guid: de5743d7052e68e1b968ac7e8398c2f9
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Droid Sans Mono
+  fontNames:
+  - Droid Sans Mono
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 21fc0bad37ce24a57aa83faa292e340f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

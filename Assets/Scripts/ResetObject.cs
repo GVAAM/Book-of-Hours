@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d881c370a497c6c97b595def08d6c333bf7a889686f5d1ab820efdf8dce787c8
-size 594
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ResetObject : MonoBehaviour
+{
+    private Vector3 startPos;
+    private Quaternion startRot;
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        startPos = transform.position;
+        startRot = transform.rotation;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void ResetPositionAndRotation()
+    {
+        transform.position = startPos;
+        transform.rotation = startRot;
+    }
+}

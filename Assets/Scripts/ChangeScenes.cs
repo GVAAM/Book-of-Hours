@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f9d174c0bfb73032eabe4fa101e818813541fd5468ac8b51d37af7ec8b7fd385
-size 492
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class ChangeScenes : MonoBehaviour
+{
+    [SerializeField] public string SceneName;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(SceneName);
+    }
+}

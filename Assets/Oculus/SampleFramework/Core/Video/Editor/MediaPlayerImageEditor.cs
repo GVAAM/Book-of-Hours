@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6b08d8b76de1fbb2bfe718e734aac0bb9d09d54e5ff4d44ccedd9de859b444cc
-size 674
+// (c) Meta Platforms, Inc. and affiliates. Confidential and proprietary.
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEditor.UI;
+using UnityEditor;
+
+[CustomEditor(typeof(MediaPlayerImage), true)]
+public class MediaPlayerImageEditor : ImageEditor
+{
+    SerializedProperty m_ButtonType;
+
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+
+        m_ButtonType = serializedObject.FindProperty("m_ButtonType");
+    }
+
+    public override void OnInspectorGUI()
+    {
+        base.OnInspectorGUI();
+
+        EditorGUILayout.PropertyField(m_ButtonType);
+        serializedObject.ApplyModifiedProperties();
+    }
+}

@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b5821093313846bac2354d01d7b044c0967ad98970ce5b4704606f5c12a7a31
-size 604
+using Unity.Collections.LowLevel.Unsafe;
+
+namespace Drawing {
+	/// <summary>Compatibility code for handling different versions of the Unity.Collections package</summary>
+	static class UnsafeAppendBufferCompatibility {
+		public static int GetLength (this ref UnsafeAppendBuffer buffer) {
+#if MODULE_COLLECTIONS_0_6_0_OR_NEWER
+			return buffer.Length;
+#else
+			return buffer.Size;
+#endif
+		}
+
+		public static void SetLength (this ref UnsafeAppendBuffer buffer, int value) {
+#if MODULE_COLLECTIONS_0_6_0_OR_NEWER
+			buffer.Length = value;
+#else
+			buffer.Size = value;
+#endif
+		}
+	}
+}

@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47d7a9d9c66b536d5df5b17641e87f1239cb3239f8da1ab1cbd871b78b0e9551
-size 889
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+
+public class QuitButton : MonoBehaviour
+{
+    [SerializeField] private GameObject text;
+    private bool readyToQuit = false;
+
+    public void StartQuitSequence()
+    {
+        if (readyToQuit)
+        {
+            Application.Quit();
+            Debug.Log("QUIT!");
+        }
+
+        text.GetComponent<TextMeshPro>().text = "PRESS AGAIN \nTO QUIT";
+        text.GetComponent<TextMeshPro>().fontSize = 28;
+        
+        readyToQuit = true;
+        StartCoroutine("StartQuitConfirmTimer");
+
+
+    }
+    
+    IEnumerator StartQuitConfirmTimer() 
+    {
+        yield return new WaitForSeconds(5);
+        text.GetComponent<TextMeshPro>().text = "QUIT APP";
+        text.GetComponent<TextMeshPro>().fontSize = 41;
+        
+        readyToQuit = false;
+    }
+}

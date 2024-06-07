@@ -1,3 +1,96 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4cb9ed9a07081c3e2d7e3d9128d9ffd396d1b4f2a6b170f7b90610b3fdf19d26
-size 3828
+<align=left><size=300%><color=#D1B000>KL</color><size=100%>             December XXXI
+<align=left>                  Luna         XXX
+<align=left>xiij   f
+<align=left>  ii    g
+<align=left>        <color=red>a</color>
+<align=left>x      b          <color=red>S’ Barbera V’</color> 
+<align=left>        c
+<align=left>xviij d         <color=red>Nicolay Epī</color> 
+<align=left>  vii  e
+<align=left>        f           <color=red>Conceptio Marie</color>
+<align=left>xv    g
+<align=left>  iiij  <color=red>A</color>
+<align=left>        b
+<align=left>xii    c
+<align=left>  i     d          Lucie V’gīs
+<align=left>        e          <color=red>Nichasius</color>
+<align=left>ix     f 
+<align=left>        g 
+<align=left>xvij  <color=red>a</color>          Lazarii mar
+<align=left>   vi  b
+<align=left>        c
+<align=left>xiiij  d
+<align=left>  iij   e          <color=red>Thoma</color>
+<align=left>        f
+<align=left>xi     g
+<align=left>        <color=red>a</color>          Vig’
+<align=left>xix   b          <color=red>Nativitas Dnī</color>
+<align=left>        c           <color=red>Stephani mar</color>
+<align=left>viij   d          <color=red>Johannes evanga</color>
+<align=left>        e           <color=red>Scōrum Innocentium</color> 
+<align=left>xv    f
+<align=left>  v    g
+<align=left>xiij   <color=red>a</color>           S’ Silvester  
+ /next/
+ /next/
+ /next/
+<color=red>Incipiunt hore sancte cruce</color>
+<size=500%><color=blue>D</color><size=100%>omine labia mea 
+aperies. Et os me-
+um annunciabit 
+laudem tuam. 
+<size=175%><color=blue>D</color><size=100%>eus in adiu-
+torium meum
+intende. Dn̄e ad adiuvandum 
+me festina. <size=175%><color=#D1B000>G</color><size=100%>loria prī, et filio, 
+et spiritui sancto. <size=175%><color=blue>S</color><size=100%>icut erat 
+in principio, et nunc, et semp̱, 
+et in saecula saeculorum, Amen.
+<size=225%><color=#D1B000>P</color><size=100%>atris sapiencia, veritas 
+divina, Deus homo cap-
+tus est hora matutina: a suis 
+discipulis cito derelictus: a Iudeis 
+traditus, venditus, et afflictus.
+<color=red>V’.</color> Adoramus te Xpriste [sic] et bene-
+/next/
+dicimus tibi, quia per sanctam 
+crucem tuam redemisti mundum.
+<size=225%><color=#D1B000>D</color><size=100%>omine Jhesu Christe, fili Dei 
+vivi, pone passionem, crucē 
+et mortem tuam inter iudiciū 
+tuum et aīam meam, nunc et 
+in exitu eius et largiri digneris
+vivis mīam et graciam defūc-
+tis requiem et veniam ecclesie 
+tue pacem et concordiam et no-
+bis peccatoribus vitam et glo-
+riam sempiternam. Qui vivis 
+et regnas Deus. Per omnia scl’a 
+seculorum. Amen. <color=red>Ad primam</color>
+Deus in adiutorium.
+<size=225%><color=#D1B000>H</color><size=100%>ora prima ductus est Ihūs 
+ad Pylatum, falsis testimoniis 
+multum accusatum. In collo
+/next/
+percutiunt manibus ligatum, 
+vultum Dei conspuunt lumen ce-
+li gratum. <color=red>V’</color>: Adoramus te. <color=red>Oratio:</color> 
+Domine Ihesu Xpe. <color=red>Ad Terciam.</color>
+Deus in adiutorium. <color=red>[H]ymnus.</color> 
+<size=225%><color=#D1B000>C</color><size=100%>rucifige clamitant hora t[er]-
+ciarum, illusus indiutur veste 
+purpurarum, capud [sic] eius pungi-
+tur corona spinarum, crucem por-
+tat humeris ad locum penarum. 
+<color=red>V’</color>: Adoramus te. <color=red>Or̄o</color>: D[omi]ne Ihū Xpe. <color=red>Ad</color> 
+Deus in adiutorium. <color=red>Sextam.</color> 
+<size=225%><color=#D1B000>H</color><size=100%>ora sexta Ihesus est cruci cō-
+clavatus, atque cum latronibus 
+pendens deputatus. Pre tormentis 
+sitiens felle saturatus, agnus cri-
+men diluit sic deificatus. <color=red>V’</color>: Ado-
+ramus te. <color=red>Or̄o</color>: D[omi]ne Ihū Xpe. <color=red>Ad No<sup>a</sup></color>
+/next/
+ 
+/next/
+ 

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4ec2b8b4d03f634d0fa7697cb5343b5a9c1ab86bf7d218585a6e06bcd5a960e4
-size 457
+{
+    "name": "Facebook.Wit.Dictation",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1c28d8b71ced07540b7c271537363cc6",
+        "GUID:4504b1a6e0fdcc3498c30b266e4a63bf"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

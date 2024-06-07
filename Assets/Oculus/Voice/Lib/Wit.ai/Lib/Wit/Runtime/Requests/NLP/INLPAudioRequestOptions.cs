@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e7e2c98dd91d7c2fcc9e2d434d712f18525bbf0f7f1c55bb9a830081922651ff
-size 462
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+namespace Meta.Voice
+{
+    /// <summary>
+    /// Interface for all specific audio NLP request parameters
+    /// </summary>
+    public interface INLPAudioRequestOptions : INLPRequestOptions, ITranscriptionRequestOptions
+    {
+    }
+}

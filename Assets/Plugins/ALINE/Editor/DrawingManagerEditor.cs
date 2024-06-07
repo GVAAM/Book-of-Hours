@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca32eb38603ea96caa10ad727420c315bd98dc45164cdb5ee246fc5d92cfa242
-size 339
+using UnityEngine;
+using System.Collections;
+using UnityEditor;
+
+namespace Drawing {
+	[CustomEditor(typeof(DrawingManager))]
+	public class DrawingManagerEditor : Editor {
+		// Use this for initialization
+		void Start () {
+		}
+
+		// Update is called once per frame
+		void Update () {
+		}
+
+		void OnSceneGUI () {
+		}
+	}
+}

@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7df3923843c2d39217fbc4fa2d4452fae26c8262a94af18bb132d149c0919079
-size 1208
+using UnityEngine;
+
+public class BouncingBallMgr : MonoBehaviour
+{
+    [SerializeField] private Transform trackingspace;
+    [SerializeField] private GameObject rightControllerPivot;
+    [SerializeField] private OVRInput.RawButton actionBtn;
+    [SerializeField] private GameObject ball;
+
+    private GameObject currentBall;
+    private bool ballGrabbed = false;
+
+    private void Update()
+    {
+        if (!ballGrabbed && OVRInput.GetDown(actionBtn))
+        {
+            currentBall = Instantiate(ball, rightControllerPivot.transform.position, Quaternion.identity);
+            currentBall.transform.parent = rightControllerPivot.transform;
+            ballGrabbed = true;
+        }
+
+        if (ballGrabbed && OVRInput.GetUp(actionBtn))
+        {
+            currentBall.transform.parent = null;
+            var ballPos = currentBall.transform.position;
+            var vel = trackingspace.rotation * OVRInput.GetLocalControllerVelocity(OVRInput.Controller.RTouch);
+            var angVel = OVRInput.GetLocalControllerAngularVelocity(OVRInput.Controller.RTouch);
+            currentBall.GetComponent<BouncingBallLogic>().Release(ballPos, vel, angVel);
+            ballGrabbed = false;
+        }
+    }
+}

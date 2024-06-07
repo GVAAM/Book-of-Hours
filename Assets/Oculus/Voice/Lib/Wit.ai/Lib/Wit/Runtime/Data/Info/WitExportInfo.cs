@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:01f20c235277aa6f86c87a703d7d10b901949e7acef2a8bdc246b379e48ee51e
-size 460
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using UnityEngine;
+
+namespace Meta.WitAi.Data.Info
+{
+    [Serializable]
+    public struct WitExportInfo
+    {
+        /// <summary>
+        /// The Download URI for the export.
+        /// </summary>
+        public string uri;
+    }
+}

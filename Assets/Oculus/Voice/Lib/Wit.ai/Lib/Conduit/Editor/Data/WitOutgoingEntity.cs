@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ccd5fff80cf0ded02998473d66d5831a13fe8cc8fedf5f9b023622302a38575a
-size 381
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Oculus.Interaction.Deprecated
+{
+    [Obsolete("Replaced by WitEntityInfo")]
+    public class WitOutgoingEntity
+    {
+    }
+}

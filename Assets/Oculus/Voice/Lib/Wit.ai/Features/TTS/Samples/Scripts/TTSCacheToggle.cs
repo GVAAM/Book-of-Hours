@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb8317e984b021117486cf43494e141df4b117d2a3fda6c48f4fac6bfac67bb1
-size 376
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Oculus.Interaction.Deprecated
+{
+    [Obsolete("Sample moved to Samples/TTSVoices")]
+    public class TTSCacheToggle { }
+}

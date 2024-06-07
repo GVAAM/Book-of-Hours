@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:318ebe155bf1240c63f19cf2c05df9523410fd64682e413af3b00023ce1bde47
-size 1000
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using Meta.WitAi;
+using Meta.WitAi.Data.Info;
+namespace Meta.WitAi.Data.Configuration.Tabs
+{
+    public class WitConfigurationApplicationTab : WitConfigurationEditorTab
+    {
+        public override Type DataType => null;
+        public override string TabID { get; } = "application";
+        public override int TabOrder { get; } = 0;
+        public override string TabLabel { get; } = WitTexts.Texts.ConfigurationApplicationTabLabel;
+        public override string MissingLabel { get; } = WitTexts.Texts.ConfigurationApplicationMissingLabel;
+        public override bool ShouldTabShow(WitAppInfo appInfo)
+        {
+            return true;
+        }
+        public override string GetPropertyName(string tabID)
+        {
+            return "_appInfo";
+        }
+    }
+}

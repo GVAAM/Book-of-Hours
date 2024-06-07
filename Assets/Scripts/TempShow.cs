@@ -1,3 +1,37 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c252b8bd049d1624becbbf32ff2ab4888da691aa41c5009cf61f1fd3e68d707
-size 707
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TempShow : MonoBehaviour
+{
+
+    [SerializeField] GameObject text;
+    private bool status;
+
+    // Start is called before the first frame update
+    public void Start()
+    {
+        text.SetActive(false);
+        status = false;
+    }
+
+    // Update is called once per frame
+    public void show()
+    {
+        if (status)
+        {
+            text.SetActive(false);
+            status = false;
+        }
+        else
+        {
+            text.SetActive(true);
+            status = true;
+        }
+    }
+
+    public void hide()
+    {
+        text.SetActive(false);
+    }
+}

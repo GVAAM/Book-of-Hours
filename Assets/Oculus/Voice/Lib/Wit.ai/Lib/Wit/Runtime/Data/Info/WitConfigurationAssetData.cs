@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa341722e0c26da8ee7648c060dca19c057d852c196bb48576a6cc8b2cb47723
-size 631
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+using Meta.WitAi.Data.Info;
+using UnityEngine;
+
+namespace Meta.WitAi.Data.Configuration
+{
+    /**
+     * A portion of the Wit app's configuration data.
+     */
+    public abstract class WitConfigurationAssetData : ScriptableObject
+    {
+        /**
+         * Retrieves from the server the relevant data.
+         */
+        public abstract void Refresh(IWitRequestConfiguration configuration);
+    }
+}

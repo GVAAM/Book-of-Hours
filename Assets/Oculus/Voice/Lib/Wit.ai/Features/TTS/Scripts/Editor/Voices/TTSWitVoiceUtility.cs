@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0658c2535460870c7312e92a8e7047ee895b00956a7f2007da24f99b2a4a14c8
-size 368
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+using System;
+
+namespace Oculus.Interaction.Deprecated
+{
+    [Obsolete("Handled by Meta.WitAi.WitAppInfoUtility")]
+    public class TTSWitVoiceUtility { }
+}

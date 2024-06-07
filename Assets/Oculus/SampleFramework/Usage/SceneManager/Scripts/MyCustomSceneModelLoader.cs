@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6d7cba4d3205ab150a59e2aa82e9ee0ebc50320e733d0b25f97f5a6c1f206d9
-size 746
+using System.Collections;
+using UnityEngine;
+
+public class MyCustomSceneModelLoader : OVRSceneModelLoader
+{
+    IEnumerator DelayedLoad()
+    {
+        yield return new WaitForSeconds(1.0f);
+        Debug.Log("[MyCustomSceneLoader] calling OVRSceneManager.LoadSceneModel() delayed by 1 second");
+        SceneManager.LoadSceneModel();
+    }
+
+    protected override void OnStart()
+    {
+        // Don't load immediately, wait some time
+        StartCoroutine(DelayedLoad());
+    }
+
+    protected override void OnNoSceneModelToLoad()
+    {
+        // Don't trigger capture flow in case there is no scene, just log a message
+        Debug.Log("[MyCustomSceneLoader] There is no scene to load, but we don't want to trigger scene capture.");
+    }
+}

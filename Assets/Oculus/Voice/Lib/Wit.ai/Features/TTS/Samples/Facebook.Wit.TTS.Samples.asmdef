@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1630ee6007a1e1305ecd30f9adf5deec2ceb2d34dc5a4a4e1ef3b3ff9e09b12b
-size 330
+{
+    "name": "Meta.WitAi.TTS.Samples",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
