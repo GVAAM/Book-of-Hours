@@ -2711,7 +2711,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: This is a cast badge that was made by shaping molten metal in a mold. It
     is a heavy badge, which was meant to be worn, fastened with its pin to clothing,
-    a hat, or a bag. Books did not contain this kind of badges, but embossed badges
+    a hat, or a bag. Books did not contain this kind of badge, but embossed badges
     that were stamped in flimsy thin metal and were thus smaller, thinner, and very
     lightweight. Try again!
   m_isRightToLeft: 0
