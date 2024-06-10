@@ -42,10 +42,6 @@ public class Interactor : MonoBehaviour, BaseInteractor
   //  private OutlineBehaviour _outlineBehaviour;
     private MaterialSwitcher _materialSwitcher;
 
-    [SerializeField] private BoxCollider leftCollider;
-    [SerializeField] private BoxCollider rightCollider;
-    [SerializeField] private BoxCollider simPageCollider;
-
     private bool isGrabbingOther = false;
     private bool grabbingPage = false; // whether or not currently grabbing a page
 
@@ -283,7 +279,7 @@ public class Interactor : MonoBehaviour, BaseInteractor
     {
         var interactible = other.gameObject.GetComponent<Interactible>();
         if (!interactible) return;
-        if (isGrabbing && other != simPageCollider) return;
+        if (isGrabbing /*&& other != simPageCollider*/) return;
         //if (isIntersecting) return; // trying to prevent from grabbing another thing 
 
         isIntersecting = true;
@@ -314,30 +310,31 @@ public class Interactor : MonoBehaviour, BaseInteractor
 
     private bool objIsPage(Interactible objtoGrab)
     {
-        //if (isIntersecting) return false; // trying to prevent from grabbing another thing 
-        var leftPage = leftCollider.gameObject.GetComponent<Interactible>();
-        var rightPage = rightCollider.gameObject.GetComponent<Interactible>();
-        var simPage = simPageCollider.gameObject.GetComponent<Interactible>();
+        /* //if (isIntersecting) return false; // trying to prevent from grabbing another thing 
+         var leftPage = leftCollider.gameObject.GetComponent<Interactible>();
+         var rightPage = rightCollider.gameObject.GetComponent<Interactible>();
+         var simPage = simPageCollider.gameObject.GetComponent<Interactible>();
 
-        if (objtoGrab == leftPage || objtoGrab == rightPage || objtoGrab == simPage)
-        {
-            return true;
-            
-        }
+         if (objtoGrab == leftPage || objtoGrab == rightPage || objtoGrab == simPage)
+         {
+             return true;
 
+         }
+
+         return false;*/
         return false;
     }
 
     private void ungrabPage(Interactible objtoGrab)
     {
-        var leftPage = leftCollider.gameObject.GetComponent<Interactible>();
+       /* var leftPage = leftCollider.gameObject.GetComponent<Interactible>();
         var rightPage = rightCollider.gameObject.GetComponent<Interactible>();
         var simPage = simPageCollider.gameObject.GetComponent<Interactible>();
 
         if (objtoGrab == leftPage || objtoGrab == rightPage || objtoGrab == simPage)
         {
             grabbingPage = false;
-        }
+        }*/
     }
 
 
