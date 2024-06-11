@@ -33,9 +33,12 @@ public class MovementManager : MonoBehaviour
             playerSpeed /= 3;
         }
 
+        
+
         //controls movement relative to the direction the player is facing.
         var centerEyeTransform = CenterEyeAnchor.transform;
         lookDirection = centerEyeTransform.transform.rotation;
+
         lookDirection.eulerAngles = new Vector3(0, lookDirection.eulerAngles.y, 0);
         normalizedLookDirection = lookDirection * Vector3.forward;
         var lookDirectionRight = Vector3.Cross(Vector3.up, normalizedLookDirection);
@@ -48,5 +51,12 @@ public class MovementManager : MonoBehaviour
         pr.position += fwdMove + strafeMove;
 
         pr.position += joystickAxisU.y * Time.deltaTime * playerSpeed * transform.up;
+
+        float rotDir = -OVRInput.Get(OVRInput.RawAxis1D.LHandTrigger, OVRInput.Controller.LTouch);
+        rotDir += OVRInput.Get(OVRInput.RawAxis1D.RHandTrigger, OVRInput.Controller.RTouch);
+
+        pr.transform.RotateAround(pr.transform.position, Vector3.up, rotDir * Time.deltaTime * playerSpeed);
+
+        
     }
 }
