@@ -29,7 +29,7 @@ MonoBehaviour:
     _renderingLayerMask: 1
   _renderPassEvent: 1000
   _shaderPassNames: []
---- !u!114 &-1914396889173924290
+--- !u!114 &-813219505350422061
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59,8 +59,8 @@ MonoBehaviour:
     hdrDebugViewPS: {fileID: 4800000, guid: 573620ae32aec764abd4d728906d2587, type: 3}
   m_RendererFeatures:
   - {fileID: 0}
-  - {fileID: -1914396889173924290}
-  m_RendererFeatureMap: c84ad75bd049c5cb3ee6ac152cb26ee5
+  - {fileID: -813219505350422061}
+  m_RendererFeatureMap: c84ad75bd049c5cbd3512b232bddb6f4
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
