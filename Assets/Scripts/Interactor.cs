@@ -39,6 +39,7 @@ public class Interactor : MonoBehaviour, BaseInteractor
 
     private Vector3 _initialScale;
     private Vector3 _initialPosition = Vector3.zero;
+    private Quaternion _initialRotation;
   //  private OutlineBehaviour _outlineBehaviour;
     private MaterialSwitcher _materialSwitcher;
 
@@ -54,6 +55,7 @@ public class Interactor : MonoBehaviour, BaseInteractor
     {
         _initialScale = this.transform.localScale;
         _initialPosition = transform.localPosition;
+        _initialRotation = transform.localRotation;
      //   _outlineBehaviour = GetComponent<OutlineBehaviour>();
         _materialSwitcher = GetComponent<MaterialSwitcher>();
 
@@ -239,6 +241,7 @@ public class Interactor : MonoBehaviour, BaseInteractor
         var isPinching = (pinchValue > handGripValue); 
         currentHandTrackingGesture = isPinching ? HandGrabType.Pinch : HandGrabType.Grip;
 
+
         var isSuccessfulPinch = pinchValue > 0.7f; // changed: was 0.8
         var isSuccessfulGrip = handGripValue > 0.7f; // changed: was 0.8
 
@@ -360,6 +363,8 @@ public class Interactor : MonoBehaviour, BaseInteractor
             transform.localScale = _initialScale * 2;
             _materialSwitcher.enabled = false;
 
+            
+
             // turn outline off on interactor sphere
             gameObject.layer = LayerMask.NameToLayer("Default");
 
@@ -374,6 +379,7 @@ public class Interactor : MonoBehaviour, BaseInteractor
 
             transform.localScale = _initialScale;
             transform.localPosition = _initialPosition;
+            transform.localRotation = _initialRotation;
             onHandTrackingInactive.Invoke();
         }
     }

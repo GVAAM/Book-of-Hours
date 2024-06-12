@@ -368,7 +368,7 @@ MonoBehaviour:
   controllerPosOffset: {x: 0, y: 0, z: 0}
   controllerRotOffset: {x: -45, y: 0, z: 180}
   handtrackingPosOffset: {x: 0, y: 0, z: 0}
-  handtrackingRotOffset: {x: 0, y: 31.43, z: 90.18}
+  handtrackingRotOffset: {x: 0, y: 90, z: 90}
 --- !u!1 &2050724503103187253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,6 +1094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLaserable: 1
+  grabbableByAllTypes: 1
   handGrabType: 0
   OnTouch:
     m_PersistentCalls:
@@ -3128,6 +3129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLaserable: 0
+  grabbableByAllTypes: 1
   handGrabType: 1
   OnTouch:
     m_PersistentCalls:
@@ -3382,6 +3384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLaserable: 0
+  grabbableByAllTypes: 1
   handGrabType: 1
   OnTouch:
     m_PersistentCalls:
@@ -3970,6 +3973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLaserable: 0
+  grabbableByAllTypes: 1
   handGrabType: 1
   OnTouch:
     m_PersistentCalls:
@@ -4359,7 +4363,7 @@ MonoBehaviour:
   controllerPosOffset: {x: 0, y: 0, z: 0}
   controllerRotOffset: {x: -45, y: 0, z: 180}
   handtrackingPosOffset: {x: 0, y: 0, z: 0}
-  handtrackingRotOffset: {x: 0, y: 31.43, z: 90.18}
+  handtrackingRotOffset: {x: 0, y: 90, z: 90}
 --- !u!1 &5862719805279418214
 GameObject:
   m_ObjectHideFlags: 0
@@ -4522,7 +4526,7 @@ MonoBehaviour:
   controllerPosOffset: {x: 0, y: 0, z: 0}
   controllerRotOffset: {x: -45, y: 0, z: 180}
   handtrackingPosOffset: {x: 0, y: 0, z: 0}
-  handtrackingRotOffset: {x: 0, y: 31.43, z: 90.18}
+  handtrackingRotOffset: {x: 0, y: 90, z: 90}
 --- !u!1 &6793735704055051056
 GameObject:
   m_ObjectHideFlags: 0
@@ -4644,6 +4648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLaserable: 1
+  grabbableByAllTypes: 1
   handGrabType: 0
   OnTouch:
     m_PersistentCalls:

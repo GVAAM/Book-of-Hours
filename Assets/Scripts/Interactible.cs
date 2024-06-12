@@ -17,44 +17,53 @@ public enum HandGrabType
 
 public class Interactible : MonoBehaviour
 {
-   public bool isLaserable = false;
-   public HandGrabType handGrabType = HandGrabType.Pinch; // change to list later 
+    public bool isLaserable = false;
+    public bool grabbableByAllTypes = true;
+    public HandGrabType handGrabType = HandGrabType.Pinch; // change to list later 
    
-   [Header("Hand-Based Events")]
-   public InteractibleEvent OnTouch;
-   public InteractibleEvent OffTouch;
-   public InteractibleEvent OnGrab;
-   public InteractibleEvent OffGrab;
+    [Header("Hand-Based Events")]
+    public InteractibleEvent OnTouch;
+    public InteractibleEvent OffTouch;
+    public InteractibleEvent OnGrab;
+    public InteractibleEvent OffGrab;
 
-   [Header("Pointer-Based Events")]
-   public InteractibleEvent OnPointerOver;
-   public InteractibleEvent OnPointerExit;
-   public InteractibleEvent OnPointerClick;
-   public InteractibleEvent OnPointerUnclick;
+    [Header("Pointer-Based Events")]
+    public InteractibleEvent OnPointerOver;
+    public InteractibleEvent OnPointerExit;
+    public InteractibleEvent OnPointerClick;
+    public InteractibleEvent OnPointerUnclick;
 
-   public bool TryGrab(Interactor interactor, HandGrabType grabType)
-   {
-      if (grabType != handGrabType && grabType != HandGrabType.Controller) return false; 
+    public bool TryGrab(Interactor interactor, HandGrabType grabType)
+    {
+        if (!grabbableByAllTypes)
+        {
+            if (grabType != handGrabType && grabType != HandGrabType.Controller)
+                return false;
+        }
 
-      OnGrab.Invoke(interactor);
+        OnGrab.Invoke(interactor);
 
-      return true;
-   }
+        return true;
+    }
    
-   public bool TryUngrab(Interactor interactor, HandGrabType grabType)
-   {
-      if (grabType != handGrabType && grabType != HandGrabType.Controller) return false;
-      
-      OffGrab.Invoke(interactor);
+    public bool TryUngrab(Interactor interactor, HandGrabType grabType)
+    {
+        if(!grabbableByAllTypes)
+        {
+            if (grabType != handGrabType && grabType != HandGrabType.Controller)
+                return false;
+        }
 
-      return true;
-   }
+        OffGrab.Invoke(interactor);
 
-   private void Start()
-   {
-      if (OnTouch == null)
-         OnTouch = new InteractibleEvent();
-      if (OffTouch == null)
-         OffTouch = new InteractibleEvent();
-   }
+        return true;
+    }
+
+    private void Start()
+    {
+        if (OnTouch == null)
+            OnTouch = new InteractibleEvent();
+        if (OffTouch == null)
+            OffTouch = new InteractibleEvent();
+    }
 }

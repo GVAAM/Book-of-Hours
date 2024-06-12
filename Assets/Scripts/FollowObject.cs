@@ -35,6 +35,9 @@ public class FollowObject : MonoBehaviour
 
             var posOffset = (!_isHandTracking) ? controllerPosOffset : handtrackingPosOffset;
             var rotOffset = (!_isHandTracking) ? controllerRotOffset : handtrackingRotOffset;
+/*
+            if (!_isLeftHand)
+                rotOffset.z += 180;*/
 
             // Define a speed for your interpolation
             float moveSpeed = .5f; // You can adjust this as needed

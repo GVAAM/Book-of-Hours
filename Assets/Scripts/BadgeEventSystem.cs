@@ -33,6 +33,8 @@ public class BadgeEventSystem : MonoBehaviour
             nextType = BadgeType.Wrong1;
         else if (col.gameObject.CompareTag("Badge 2 W"))
             nextType = BadgeType.Wrong2;
+        else
+            return;
 
         BIntro.SetActive(false);
 
@@ -82,6 +84,8 @@ public class BadgeEventSystem : MonoBehaviour
             nextType = BadgeType.Wrong1;
         else if (col.gameObject.CompareTag("Badge 2 W"))
             nextType = BadgeType.Wrong2;
+        else
+            return;
 
         switch (nextType)
         {
