@@ -106,6 +106,11 @@ public class Interactor : MonoBehaviour, BaseInteractor
         return IsHandTracking;
     }
 
+    public bool IsIntersectingObject()
+    {
+        return intersectedObjects.Count > 0;
+    }
+
     private void SetInteractorTransform()
     {
         if (currentHandTrackingGesture == HandGrabType.Pinch)

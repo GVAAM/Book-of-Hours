@@ -2,27 +2,28 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using HandPhysicsToolkit.Helpers.Interfaces;
+using Oculus.Interaction.Body.Input;
 using UnityEngine;
 
 public class PhysicsPointer : MonoBehaviour, BaseInteractor
 {
     // on the right hand? why not the left
-
-    private int layerMask = 1 << 3; // only allow layer 3 (LaserUI) for raycasts
-    
     public float defaultLength = 3.0f;
 
-    private LineRenderer lineRenderer = null;
     [SerializeField] private GameObject startPointObj;
-    
-    // used for caching the startPointObj's position vector so that it can be restored if handtracking is enabled then disabled
-    private Vector3 nonHandtrackingStartPoint = Vector3.zero;
-
-    private Interactible hitObject = null;
     [SerializeField] private Interactor sphereInteractor; 
 
     public bool isLeftHand = true;
 
+    //Private Variables
+    private int layerMask = 1 << 3; // only allow layer 3 (LaserUI) for raycasts
+    
+    // used for caching the startPointObj's position vector so that it can be restored if handtracking is enabled then disabled
+    private Vector3 nonHandtrackingStartPoint = Vector3.zero;
+    private Vector3 foundEndPoint = Vector3.zero;
+    private LineRenderer lineRenderer = null;
+    private Interactible foundObject = null;
+    private Interactible hitObject = null;
     private bool wasClickPressedLastFrame = false;
 
     private bool isLROn = false;
@@ -62,27 +63,44 @@ public class PhysicsPointer : MonoBehaviour, BaseInteractor
             }
         }
 
-        UpdateLength();
-        CheckPointerClick();
-        
-        // update linerenderer visibility
-        lineRenderer.enabled = isLROn;
+        //If the raycast is successful and the interactor is not intersecting anything then we can apply the raycast
+        if(TryInteractibleRaycast() && !sphereInteractor.IsIntersectingObject())
+        {
+            AddInteractible(foundObject);
+            UpdateLength();
+            lineRenderer.enabled = true;
+
+            CheckPointerClick();
+        }
+        else
+        {
+            RemoveInteractible();
+            lineRenderer.enabled = false;
+        }
     }
 
-    public GameObject GetGameObject()
+    public GameObject GetGameObject() { return gameObject; }
+    public bool GetIsLeftHand() { return isLeftHand; }
+    public bool GetIsHandTracking() { return isHandtrackingOn; }
+
+    private bool TryInteractibleRaycast()
     {
-        return gameObject;
+        RaycastHit hit = CreateForwardRaycast();
+        foundEndPoint = DefaultEnd(defaultLength);
+
+        if (hit.collider)
+        {
+            foundObject = hit.collider.gameObject.GetComponent<Interactible>();
+            foundEndPoint = hit.point;
+
+            return true;
+        }
+        else
+            foundObject = null;
+
+        return false;
     }
 
-    public bool GetIsLeftHand()
-    {
-        return isLeftHand;
-    }
-
-    public bool GetIsHandTracking()
-    {
-        return isHandtrackingOn;
-    }
 
     private void CheckPointerClick()
     {
@@ -106,7 +124,7 @@ public class PhysicsPointer : MonoBehaviour, BaseInteractor
             {
                 if (hitObject)
                 {
-                    DoClick(hitObject);
+                    hitObject.OnPointerClick.Invoke(this);
                 }
             }
 
@@ -116,50 +134,10 @@ public class PhysicsPointer : MonoBehaviour, BaseInteractor
         {
             if (hitObject)
             {
-                DoUnclick(hitObject);
+                hitObject.OnPointerUnclick.Invoke(this);
             }
             wasClickPressedLastFrame = false;
         }
-    }
-    
-    private void DoClick(Interactible objtoGrab)
-    {
-        objtoGrab.OnPointerClick.Invoke(this);
-    }
-    
-    private void DoUnclick(Interactible objtoGrab)
-    {
-        objtoGrab.OnPointerUnclick.Invoke(this);
-    }
-
-    void UpdateLength()
-    {
-         lineRenderer.SetPosition(0,startPointObj.transform.position);
-         lineRenderer.SetPosition(1,CalculateEnd());
-    }
-
-    Vector3 CalculateEnd()
-    {
-        RaycastHit hit = CreateForwardRaycast();
-        Vector3 endPosition = DefaultEnd(defaultLength);
-
-        if (hit.collider)
-        {
-            isLROn = true;
-            
-            endPosition = hit.point;
-            
-            var interactible = hit.collider.gameObject.GetComponent<Interactible>();
-            
-            AddInteractible(interactible);
-        }
-        else
-        {
-            isLROn = false;
-            
-            RemoveInteractible();
-        }
-        return endPosition;
     }
 
     private void AddInteractible(Interactible interactible)
@@ -188,6 +166,12 @@ public class PhysicsPointer : MonoBehaviour, BaseInteractor
         hitObject = null;
     }
 
+    void UpdateLength()
+    {
+        lineRenderer.SetPosition(0, startPointObj.transform.position);
+        lineRenderer.SetPosition(1, foundEndPoint);
+    }
+
     RaycastHit CreateForwardRaycast()
     {
         RaycastHit hit;
@@ -196,13 +180,13 @@ public class PhysicsPointer : MonoBehaviour, BaseInteractor
         Physics.Raycast(ray, out hit, defaultLength, layerMask);
         
         return hit;
-
     }
 
     Vector3 DefaultEnd(float length)
     {
         return startPointObj.transform.position + (startPointObj.transform.forward * length);
     }
+
     //CHECK this when implementing handtracking laser - it only turns off the line renderer, not the actual raycast
     void OnHandTrackingOn()
     {
