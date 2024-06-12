@@ -8,6 +8,8 @@ public class StaticDebugText : MonoBehaviour
 {
     static TextMeshPro mText;
     static List<string> mLines = new List<string>();
+    static List<string> mPermanentLines = new List<string>();
+
     private void Awake()
     {
         mText = GetComponent<TextMeshPro>();
@@ -16,6 +18,14 @@ public class StaticDebugText : MonoBehaviour
     private void LateUpdate()
     {
         string text = "";
+
+        foreach(string line in mPermanentLines)
+        {
+            text += line;
+            text += "\n";
+        }
+
+        text += "\n";
 
         foreach (string line in mLines)
         {
@@ -31,5 +41,10 @@ public class StaticDebugText : MonoBehaviour
     public static void AddDebugMessageForFrame(string line)
     {
         mLines.Add(line);
+    }
+
+    public static void AddPermanentDebugMessage(string line)
+    {
+        mPermanentLines.Add(line);
     }
 }

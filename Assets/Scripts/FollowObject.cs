@@ -35,9 +35,6 @@ public class FollowObject : MonoBehaviour
 
             var posOffset = (!_isHandTracking) ? controllerPosOffset : handtrackingPosOffset;
             var rotOffset = (!_isHandTracking) ? controllerRotOffset : handtrackingRotOffset;
-/*
-            if (!_isLeftHand)
-                rotOffset.z += 180;*/
 
             // Define a speed for your interpolation
             float moveSpeed = .5f; // You can adjust this as needed
@@ -50,10 +47,7 @@ public class FollowObject : MonoBehaviour
             Quaternion smoothedRot = Quaternion.Slerp(transform.rotation, targetObject.rotation * Quaternion.Euler(0, 180f, 0) * Quaternion.Euler(rotOffset), rotationSpeed);
 
             transform.position = smoothedPos + posOffset;
-            transform.rotation = smoothedRot; //  * Quaternion.Euler(rotOffset);
-
-            
-            // transform.Rotate(rotOffset);
+            transform.rotation = smoothedRot;
 
             
             if (positionChangeMagnitude >= 3f)

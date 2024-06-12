@@ -450,7 +450,7 @@ MonoBehaviour:
   controllerPosOffset: {x: 0, y: 0, z: 0}
   controllerRotOffset: {x: -51, y: 0, z: 0}
   handtrackingPosOffset: {x: 0, y: 0, z: 0}
-  handtrackingRotOffset: {x: 0, y: 31.43, z: 90.18}
+  handtrackingRotOffset: {x: 0, y: 0, z: 90}
 --- !u!54 &70697969458119228
 Rigidbody:
   m_ObjectHideFlags: 0

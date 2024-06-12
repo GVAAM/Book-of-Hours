@@ -368,7 +368,10 @@ public class Interactor : MonoBehaviour, BaseInteractor
             transform.localScale = _initialScale * 2;
             _materialSwitcher.enabled = false;
 
-            
+            if(isLeftHand)
+            {
+                transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y + 180, transform.localEulerAngles.z);
+            }
 
             // turn outline off on interactor sphere
             gameObject.layer = LayerMask.NameToLayer("Default");
