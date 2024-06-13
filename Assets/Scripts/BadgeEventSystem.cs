@@ -4,68 +4,116 @@ using UnityEngine;
 
 public class BadgeEventSystem : MonoBehaviour
 {
+    enum BadgeType
+    {
+        Wrong1,
+        Wrong2,
+        Right,
+        None
+    }
+
 
     public GameObject WrongD1;
     public GameObject WrongD2;
     public GameObject RightD;
     public GameObject BIntro;
 
+    SortedSet<BadgeType> activeBadges = new SortedSet<BadgeType>();
+
     [SerializeField] Material triggerMat;
     [SerializeField] private GameObject page;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void OnTriggerEnter(Collider col)
     {
-        string name = page.GetComponent<MeshRenderer>().material.name;
-        if ((name == triggerMat.name + " (Instance)"))
+        BadgeType nextType = BadgeType.None;
+
+        if (col.gameObject.CompareTag("Badge 3 R"))
+            nextType = BadgeType.Right;
+        else if (col.gameObject.CompareTag("Badge 1 W"))
+            nextType = BadgeType.Wrong1;
+        else if (col.gameObject.CompareTag("Badge 2 W"))
+            nextType = BadgeType.Wrong2;
+        else
+            return;
+
+        BIntro.SetActive(false);
+
+        switch (nextType)
         {
-
-            if (col.gameObject.CompareTag("Badge 3 R"))
-            {
+            case BadgeType.Right:
                 RightD.SetActive(true);
-                BIntro.SetActive(false);
-            }
-
-            if (col.gameObject.CompareTag("Badge 1 W"))
-            {
+                break;
+            case BadgeType.Wrong1:
                 WrongD1.SetActive(true);
-                BIntro.SetActive(false);
-            }
-
-            if (col.gameObject.CompareTag("Badge 2 W"))
-            {
+                break;
+            case BadgeType.Wrong2:
                 WrongD2.SetActive(true);
-                BIntro.SetActive(false);
+                break;
+            default:
+                break;
+        }
+
+        foreach(var type in activeBadges)
+        {
+            switch (type)
+            {
+                case BadgeType.Right:
+                    RightD.SetActive(false);
+                    break;
+                case BadgeType.Wrong1:
+                    WrongD1.SetActive(false);
+                    break;
+                case BadgeType.Wrong2:
+                    WrongD2.SetActive(false);
+                    break;
+                default:
+                    break;
             }
         }
+
+        activeBadges.Add(nextType);
     }
 
     void OnTriggerExit(Collider col)
     {
+        BadgeType nextType = BadgeType.None;
+
         if (col.gameObject.CompareTag("Badge 3 R"))
+            nextType = BadgeType.Right;
+        else if (col.gameObject.CompareTag("Badge 1 W"))
+            nextType = BadgeType.Wrong1;
+        else if (col.gameObject.CompareTag("Badge 2 W"))
+            nextType = BadgeType.Wrong2;
+        else
+            return;
+
+        switch (nextType)
         {
-            RightD.SetActive(false);
+            case BadgeType.Right:
+                RightD.SetActive(false);
+                break;
+            case BadgeType.Wrong1:
+                WrongD1.SetActive(false);
+                break;
+            case BadgeType.Wrong2:
+                WrongD2.SetActive(false);
+                break;
+            default:
+                break;
         }
 
-        if (col.gameObject.CompareTag("Badge 1 W"))
-        {
-            WrongD1.SetActive(false);
-        }
+        activeBadges.Remove(nextType);
 
-        if (col.gameObject.CompareTag("Badge 2 W"))
+        if(activeBadges.Count == 0)
+            BIntro.SetActive(true);
+        else
         {
-            WrongD2.SetActive(false);
+            if(activeBadges.Contains(BadgeType.Right))
+                RightD.SetActive(true);
+            else if(activeBadges.Contains(BadgeType.Wrong1))
+                WrongD1.SetActive(true);
+            else if(activeBadges.Contains(BadgeType.Wrong2))
+                WrongD2.SetActive(true);
         }
     }
 }
