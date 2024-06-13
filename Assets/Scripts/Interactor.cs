@@ -362,6 +362,9 @@ public class Interactor : MonoBehaviour, BaseInteractor
 
     void HandTrackingChange(bool isHandTracking)
     {
+        if (transform.localScale == 2 * _initialScale && isHandTracking)
+            return;
+
         if (isHandTracking)
         {
             // make interactor sphere larger
