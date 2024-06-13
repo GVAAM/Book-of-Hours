@@ -293,7 +293,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!59 &5396354930090885559
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -545,7 +545,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!59 &3885955566020101336
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -1357,7 +1357,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!59 &3667599817858602984
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -1869,6 +1869,9 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 4103609536995575553}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a67a4d47efee55746be9127b07e65366, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1225611181555316337}
     - targetCorrespondingSourceObject: {fileID: -7808665383137389278, guid: a67a4d47efee55746be9127b07e65366, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6826884711621382035}
@@ -1906,6 +1909,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a67a4d47efee55746be9127b07e65366, type: 3}
   m_PrefabInstance: {fileID: 4801681420593304170}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5648523413833363259 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a67a4d47efee55746be9127b07e65366, type: 3}
+  m_PrefabInstance: {fileID: 4801681420593304170}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1225611181555316337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5648523413833363259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e37ea444b58dd634b8a9475a0107cf1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pages:
+  - {fileID: 9093227061542690067}
+  - {fileID: 6241012984511917009}
+  - {fileID: 3328611209265567930}
+  - {fileID: 861534817634635485}
 --- !u!1 &5836933376488654664 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7808665383137389278, guid: a67a4d47efee55746be9127b07e65366, type: 3}
@@ -2017,7 +2042,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!59 &5659931984533091334
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -2097,3 +2122,8 @@ MonoBehaviour:
     MaxAngle:
       Constrain: 0
       Value: 0
+--- !u!1 &9093227061542690067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4858436105525653639, guid: a67a4d47efee55746be9127b07e65366, type: 3}
+  m_PrefabInstance: {fileID: 4801681420593304170}
+  m_PrefabAsset: {fileID: 0}

@@ -2681,6 +2681,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4983310721119155585, guid: e15433e89676ac84d9c2b9b437ceacb0, type: 3}
   m_PrefabInstance: {fileID: 515287895}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &515287897 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1225611181555316337, guid: e15433e89676ac84d9c2b9b437ceacb0, type: 3}
+  m_PrefabInstance: {fileID: 515287895}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e37ea444b58dd634b8a9475a0107cf1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &530422695
 GameObject:
   m_ObjectHideFlags: 0
@@ -5917,6 +5928,42 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 4475051715889369814, guid: 2c8e49d44f7e6f146a468fd07c657d77, type: 3}
+      propertyPath: OnPointerClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475051715889369814, guid: 2c8e49d44f7e6f146a468fd07c657d77, type: 3}
+      propertyPath: OnPointerClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 515287897}
+    - target: {fileID: 4475051715889369814, guid: 2c8e49d44f7e6f146a468fd07c657d77, type: 3}
+      propertyPath: OnPointerClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetPages
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475051715889369814, guid: 2c8e49d44f7e6f146a468fd07c657d77, type: 3}
+      propertyPath: OnPointerClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475051715889369814, guid: 2c8e49d44f7e6f146a468fd07c657d77, type: 3}
+      propertyPath: OnPointerClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475051715889369814, guid: 2c8e49d44f7e6f146a468fd07c657d77, type: 3}
+      propertyPath: OnPointerClick.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475051715889369814, guid: 2c8e49d44f7e6f146a468fd07c657d77, type: 3}
+      propertyPath: OnPointerClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PageReset, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475051715889369814, guid: 2c8e49d44f7e6f146a468fd07c657d77, type: 3}
+      propertyPath: OnPointerClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: PagesideTextManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475051715889369814, guid: 2c8e49d44f7e6f146a468fd07c657d77, type: 3}
+      propertyPath: OnPointerClick.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: MaterialSwitcher, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5459643193402115340, guid: 2c8e49d44f7e6f146a468fd07c657d77, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
