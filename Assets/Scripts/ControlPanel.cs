@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine.Audio;
-using System.Diagnostics;
 
 public class ControlPanel : MonoBehaviour
 {
@@ -61,10 +60,9 @@ public class ControlPanel : MonoBehaviour
     [SerializeField] private GameObject highlightFolder;
     private bool AnnotationHasBeenTurnedOff;
 
-    [SerializeField] private GameObject enabledOnOffText;
-    private bool badgeIsOn = false;
-    [SerializeField] private GameObject badgeExperience;
-    [SerializeField] private GameObject bookExperience;
+    [SerializeField] private GameObject InspectorOnOffText;
+    private bool inspectorIsOn = true;
+    [SerializeField] private GameObject inspectorPeripheries;
 
 
     // Start is called before the first frame update
@@ -151,7 +149,7 @@ public class ControlPanel : MonoBehaviour
             OnVolume5.SetActive(true);
             OffVolume5.SetActive(false);
             Volume = Volume + 5;
-
+            
         }
     }
 
@@ -278,7 +276,7 @@ public class ControlPanel : MonoBehaviour
             pauseButton.GetComponent<Renderer>().sharedMaterial = play;
             BGMusic.GetComponent<AudioSource>().Play();
             musicHasBeenPaused = false;
-            //Debug.Log("play");
+            Debug.Log("play");
         }
     }
 
@@ -314,21 +312,21 @@ public class ControlPanel : MonoBehaviour
         }
     }
 
-    public void UpdateBadgeOnOff()
+    public void UpdateInspectorOnOff()
     {
-        if (badgeIsOn == false)
+        inspectorIsOn = !inspectorIsOn;
+        if (inspectorIsOn == false)
         {
-            enabledOnOffText.GetComponent<TextMeshPro>().text = "ENTER BOOK EXPERIENCE";
-            badgeExperience.SetActive(true);
-            bookExperience.SetActive(false);
+            InspectorOnOffText.GetComponent<TextMeshPro>().text = "OFF";
+            inspectorPeripheries.SetActive(false);
         }
         else
         {
-            enabledOnOffText.GetComponent<TextMeshPro>().text = "ENTER BADGE EXPERIENCE";
-            badgeExperience.SetActive(false);
-            bookExperience.SetActive(true);
+            InspectorOnOffText.GetComponent<TextMeshPro>().text = "ON";
+            inspectorPeripheries.SetActive(true);
+
         }
-        badgeIsOn = !badgeIsOn;
+
     }
 
     public void ResetExperienceCP()
