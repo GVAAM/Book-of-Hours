@@ -204,7 +204,7 @@ public class ControlPanel : MonoBehaviour
         CurMusicNum++;
         if (CurMusicNum >= musicNameList.Count)
         {
-            CurMusicNum--;
+            CurMusicNum = 0;
         }
         MusicNameText.text = musicNameList[CurMusicNum];
     }
@@ -214,7 +214,7 @@ public class ControlPanel : MonoBehaviour
         CurMusicNum--;
         if (CurMusicNum <= -1)
         {
-            CurMusicNum++;
+            CurMusicNum = musicNameList.Count - 1;
         }
         MusicNameText.text = musicNameList[CurMusicNum];
     }
@@ -224,7 +224,7 @@ public class ControlPanel : MonoBehaviour
         CurTrackNum++;
         if (CurTrackNum >= musicList.Count)
         {
-            CurTrackNum--;
+            CurTrackNum = 0;
         }
         Track = musicList[CurTrackNum];
         BGMusic.GetComponent<MusicManager>().UpdateTrack(CurTrackNum);
@@ -236,7 +236,7 @@ public class ControlPanel : MonoBehaviour
 
         if (CurTrackNum <= -1)
         {
-            CurTrackNum++;
+            CurTrackNum = musicList.Count - 1;
         }
         Track = musicList[CurTrackNum];
         BGMusic.GetComponent<MusicManager>().UpdateTrack(CurTrackNum);
@@ -267,13 +267,13 @@ public class ControlPanel : MonoBehaviour
     {
         if (musicHasBeenPaused == false)
         {
-            pauseButton.GetComponent<Renderer>().sharedMaterial = pause;
+            pauseButton.GetComponent<Renderer>().sharedMaterial = play;
             BGMusic.GetComponent<AudioSource>().Pause();
             musicHasBeenPaused = true;
         }
         else
         {
-            pauseButton.GetComponent<Renderer>().sharedMaterial = play;
+            pauseButton.GetComponent<Renderer>().sharedMaterial = pause;
             BGMusic.GetComponent<AudioSource>().Play();
             musicHasBeenPaused = false;
             Debug.Log("play");

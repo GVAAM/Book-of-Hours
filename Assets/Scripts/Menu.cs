@@ -7,12 +7,19 @@ using UnityEngine.EventSystems;
 public class Menu : MonoBehaviour
 {
     public GameObject menu;
+    public bool startHidden = true;
+    public List<GameObject> otherMenus = new List<GameObject>();
+
     private bool hidden;
 
     // Start is called before the first frame update
     void Start()
     {
-        hidden = true;
+        hidden = startHidden;
+        menu.SetActive(!hidden);
+        if(!hidden)
+            foreach (var m in otherMenus)
+                m.SetActive(false);
     }
 
     // Update is called once per frame
@@ -23,15 +30,10 @@ public class Menu : MonoBehaviour
 
     public void onAndOff()
     {
-        if (hidden == true)
-        {
+        if (hidden)
             StartCoroutine(OnDelay());
-        }
-
-        if (hidden == false)
-        {
+        else
             StartCoroutine(OffDelay());
-        }
     }
 
     IEnumerator OffDelay()
@@ -46,6 +48,9 @@ public class Menu : MonoBehaviour
     IEnumerator OnDelay()
     {
         menu.SetActive(true);
+
+        foreach(var m in otherMenus)
+            m.SetActive(false);
 
         yield return new WaitForSeconds(0.3f);
 
