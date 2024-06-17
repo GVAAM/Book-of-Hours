@@ -166,6 +166,37 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4614352906731162410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4400058401197655916}
+  m_Layer: 0
+  m_Name: Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4400058401197655916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4614352906731162410}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6352128901040681781}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6374018666523168676
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,9 +325,11 @@ GameObject:
   - component: {fileID: 2022969563721435630}
   - component: {fileID: 677031237105886044}
   - component: {fileID: 70697969458119202}
+  - component: {fileID: 3319015070699796926}
   - component: {fileID: 70697969458119229}
   - component: {fileID: 70697969458119228}
   - component: {fileID: 70697969458119231}
+  - component: {fileID: 6469848543195123774}
   m_Layer: 0
   m_Name: Ruler
   m_TagString: Untagged
@@ -317,6 +350,7 @@ Transform:
   m_LocalScale: {x: 0.9496777, y: 0.9496777, z: 0.9496777}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 4400058401197655916}
   - {fileID: 1790228841568211542}
   - {fileID: 2853194803786048445}
   - {fileID: 5998443514170627358}
@@ -396,8 +430,8 @@ MonoBehaviour:
   OnGrab:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 70697969458119229}
-        m_TargetAssemblyTypeName: FollowObject, Assembly-CSharp
+      - m_Target: {fileID: 3319015070699796926}
+        m_TargetAssemblyTypeName: NewFollowObject, Assembly-CSharp
         m_MethodName: RegisterTarget
         m_Mode: 0
         m_Arguments:
@@ -411,8 +445,8 @@ MonoBehaviour:
   OffGrab:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 70697969458119229}
-        m_TargetAssemblyTypeName: FollowObject, Assembly-CSharp
+      - m_Target: {fileID: 3319015070699796926}
+        m_TargetAssemblyTypeName: NewFollowObject, Assembly-CSharp
         m_MethodName: UnregisterTarget
         m_Mode: 1
         m_Arguments:
@@ -435,6 +469,19 @@ MonoBehaviour:
   OnPointerUnclick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3319015070699796926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7120116027061228729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e5d70222cad6614fb16512aec3fb18c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 4614352906731162410}
 --- !u!114 &70697969458119229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,6 +546,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.9999995, y: 0.44095597, z: 31.999998}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6469848543195123774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7120116027061228729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e477a77e4c5266e43b2cb054a1e1163b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8048364337462618946
 GameObject:
   m_ObjectHideFlags: 0

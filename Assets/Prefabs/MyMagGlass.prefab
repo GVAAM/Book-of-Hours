@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4273493649434776748}
   - component: {fileID: 4273493649434776751}
+  - component: {fileID: 949633278484915039}
   m_Layer: 0
   m_Name: MyMagGlass
   m_TagString: Untagged
@@ -113,6 +114,7 @@ Transform:
   m_LocalScale: {x: 6.2903748, y: 6.2903748, z: 6.2903748}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 3034881773860337181}
   - {fileID: 4273493650708226008}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 180}
@@ -143,6 +145,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &949633278484915039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273493649434776744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e477a77e4c5266e43b2cb054a1e1163b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4273493650363381618
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +525,7 @@ GameObject:
   - component: {fileID: 4273493650708226013}
   - component: {fileID: 4273493650708226014}
   - component: {fileID: 4273493650708226015}
+  - component: {fileID: 8296758038269905480}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -608,8 +623,8 @@ MonoBehaviour:
   OnGrab:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4273493650708226014}
-        m_TargetAssemblyTypeName: FollowObject, Assembly-CSharp
+      - m_Target: {fileID: 8296758038269905480}
+        m_TargetAssemblyTypeName: NewFollowObject, Assembly-CSharp
         m_MethodName: RegisterTarget
         m_Mode: 0
         m_Arguments:
@@ -623,8 +638,8 @@ MonoBehaviour:
   OffGrab:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4273493650708226014}
-        m_TargetAssemblyTypeName: FollowObject, Assembly-CSharp
+      - m_Target: {fileID: 8296758038269905480}
+        m_TargetAssemblyTypeName: NewFollowObject, Assembly-CSharp
         m_MethodName: UnregisterTarget
         m_Mode: 1
         m_Arguments:
@@ -711,3 +726,47 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.216569, y: 18.182264, z: 2.8854995}
   m_Center: {x: 0.024714839, y: -3.5929902, z: -0.040345628}
+--- !u!114 &8296758038269905480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273493650708226009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e5d70222cad6614fb16512aec3fb18c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 7418453753998910083}
+--- !u!1 &7418453753998910083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3034881773860337181}
+  m_Layer: 0
+  m_Name: Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3034881773860337181
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7418453753998910083}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4273493649434776748}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

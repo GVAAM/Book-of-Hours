@@ -10,6 +10,8 @@ public class ResetObject : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ObjectResetController.AddResettableObj(this.gameObject);
+
         startPos = transform.position;
         startRot = transform.rotation;
     }

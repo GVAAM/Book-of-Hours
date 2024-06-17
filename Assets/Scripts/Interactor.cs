@@ -168,6 +168,7 @@ public class Interactor : MonoBehaviour, BaseInteractor
                     DoGrab(obj, HandGrabType.Controller);
                     if (objIsPage(obj)) grabbingPage = true;
                     isGrabbingOther = true;
+                    break;
                 }
             }
             isGrabbingOther = true; 
@@ -257,6 +258,7 @@ public class Interactor : MonoBehaviour, BaseInteractor
                 if (DoGrab(obj, currentHandTrackingGesture))
                 {
                     wasPinchingOrGripping = true;
+                    break;
                 }
                   
             }
