@@ -111,6 +111,11 @@ public class Interactor : MonoBehaviour, BaseInteractor
         return intersectedObjects.Count > 0;
     }
 
+    public bool IsBusy()
+    {
+        return intersectedObjects.Count > 0 || isGrabbing;
+    }
+
     private void SetInteractorTransform()
     {
         if (currentHandTrackingGesture == HandGrabType.Pinch)

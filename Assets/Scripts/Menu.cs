@@ -30,7 +30,7 @@ public class Menu : MonoBehaviour
 
     public void onAndOff()
     {
-        if (hidden)
+        if (!menu.activeSelf)
             StartCoroutine(OnDelay());
         else
             StartCoroutine(OffDelay());

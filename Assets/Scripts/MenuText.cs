@@ -31,16 +31,29 @@ public class MenuText : MonoBehaviour
     // update based on code in PagesideTextManager that recognizes if the page has been turned
     public void updateState()
     {
+        stateNum++;
+        if (stateNum >= stateList.Count)
+            stateNum = 0;
+
+        GetComponent<TextMeshPro>().text = stateList[stateNum];
+        //stateNum = bookManager.getLeftPageNum(); // get the left page number
         
-        stateNum = bookManager.getLeftPageNum(); // get the left page number
+    }
+
+    public void updateStateBackwards()
+    {
+        stateNum--;
+        if(stateNum < 0)
+            stateNum = stateList.Count - 1;
+
         GetComponent<TextMeshPro>().text = stateList[stateNum];
     }
 
-
     public void ResetExperienceMT()
     {
-        stateNum = 0;
         GetComponent<TextMeshPro>().text = stateList[stateNum];
+        //stateNum = 0;
+        
     }
 
 }

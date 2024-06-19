@@ -252,16 +252,26 @@ public class ControlPanel : MonoBehaviour
             CurLangNum = 0;
         }
         langNameText.text = langList[CurLangNum];
+
+        if (CurLangNum != 0)
+            pagesideTextManager.SetActive(true);
+        else
+            pagesideTextManager.SetActive(false);
     }
 
     public void CycleLanguageNameBackwards()
     {
         CurLangNum--;
-        if (CurLangNum <= langList.Count)
+        if (CurLangNum < 0)
         {
-            CurLangNum = langList.Count;
+            CurLangNum = langList.Count - 1;
         }
         langNameText.text = langList[CurLangNum];
+
+        if (CurLangNum != 0)
+            pagesideTextManager.SetActive(true);
+        else
+            pagesideTextManager.SetActive(false);
     }
 
 

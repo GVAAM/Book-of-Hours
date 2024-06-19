@@ -64,7 +64,7 @@ public class PhysicsPointer : MonoBehaviour, BaseInteractor
         }
 
         //If the raycast is successful and the interactor is not intersecting anything then we can apply the raycast
-        if(TryInteractibleRaycast() && !sphereInteractor.IsIntersectingObject())
+        if(TryInteractibleRaycast() && !sphereInteractor.IsBusy())
         {
             AddInteractible(foundObject);
             UpdateLength();
