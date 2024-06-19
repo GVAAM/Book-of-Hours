@@ -5356,16 +5356,13 @@ MonoBehaviour:
 
     The left thumbstick will move you forward, back, left, and right.
 
+
     The
     right thumbstick will move you up and down.
 
 
-
-
     Pinch your fingers or press
-    ''A'' to continue. Press ''B'' to enter the experience.
-
-'
+    ''A'' to continue. Press ''B'' to enter the experience.'
   - "There are two ways to interact with the experience: With Oculus controllers,
     or with Natural hand tracking.\r\n\r\n<b>1) With Controllers</b>\r\nUsing your
     Oculus controllers, you can pick up the edge of the interactive page by holding
@@ -5395,16 +5392,16 @@ MonoBehaviour:
     Humanities Advancement Grant from the National Endowment for the Humanities:
     Democracy demands wisdom.
 
-    
+
 
     Any views, findings, conclusions, or recommendations
     expressed in this experience do not necessarily represent those of the National
     Endowment for the Humanities.
 
-    
 
-    Pinch your fingers or press ''A''
-    to continue. Press ''B'' to enter the experience.
+
+    Pinch your fingers or press ''A'' to continue.
+    Press ''B'' to enter the experience.
 
 '
   spriteList:

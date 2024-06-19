@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 4273493649434776748}
   - component: {fileID: 4273493649434776751}
   - component: {fileID: 949633278484915039}
+  - component: {fileID: 3795458976949765490}
   m_Layer: 0
   m_Name: MyMagGlass
   m_TagString: Untagged
@@ -157,6 +158,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e477a77e4c5266e43b2cb054a1e1163b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3795458976949765490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273493649434776744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e5d70222cad6614fb16512aec3fb18c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 7418453753998910083}
 --- !u!1 &4273493650363381618
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,9 +537,7 @@ GameObject:
   - component: {fileID: 4273493650708226003}
   - component: {fileID: 4273493650708226012}
   - component: {fileID: 4273493650708226013}
-  - component: {fileID: 4273493650708226014}
   - component: {fileID: 4273493650708226015}
-  - component: {fileID: 8296758038269905480}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -623,7 +635,7 @@ MonoBehaviour:
   OnGrab:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8296758038269905480}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: NewFollowObject, Assembly-CSharp
         m_MethodName: RegisterTarget
         m_Mode: 0
@@ -638,7 +650,7 @@ MonoBehaviour:
   OffGrab:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8296758038269905480}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: NewFollowObject, Assembly-CSharp
         m_MethodName: UnregisterTarget
         m_Mode: 1
@@ -689,22 +701,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4273493650708226014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4273493650708226009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9ddf4ba3d356034a9d98ade1923cdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controllerPosOffset: {x: 0, y: 0, z: 0}
-  controllerRotOffset: {x: -51, y: 0, z: 0}
-  handtrackingPosOffset: {x: 0, y: 0, z: 0}
-  handtrackingRotOffset: {x: 180, y: 120, z: 90}
 --- !u!65 &4273493650708226015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -726,19 +722,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.216569, y: 18.182264, z: 2.8854995}
   m_Center: {x: 0.024714839, y: -3.5929902, z: -0.040345628}
---- !u!114 &8296758038269905480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4273493650708226009}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e5d70222cad6614fb16512aec3fb18c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObject: {fileID: 7418453753998910083}
 --- !u!1 &7418453753998910083
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,7 +746,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7418453753998910083}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

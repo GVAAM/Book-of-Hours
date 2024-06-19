@@ -55,7 +55,7 @@ public class MovementManager : MonoBehaviour
         float rotDir = -OVRInput.Get(OVRInput.RawAxis1D.LHandTrigger, OVRInput.Controller.LTouch);
         rotDir += OVRInput.Get(OVRInput.RawAxis1D.RHandTrigger, OVRInput.Controller.RTouch);
 
-        pr.transform.RotateAround(pr.transform.position, Vector3.up, rotDir * Time.deltaTime * playerSpeed);
+        pr.transform.RotateAround(pr.transform.position, Vector3.up, joystickAxisU.x * Time.deltaTime * playerSpeed);
 
         
     }
