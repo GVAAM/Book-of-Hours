@@ -12,7 +12,6 @@ public class BadgeEventSystem : MonoBehaviour
         None
     }
 
-
     public GameObject WrongD1;
     public GameObject WrongD2;
     public GameObject RightD;
@@ -20,12 +19,15 @@ public class BadgeEventSystem : MonoBehaviour
 
     SortedSet<BadgeType> activeBadges = new SortedSet<BadgeType>();
 
-    [SerializeField] Material triggerMat;
-    [SerializeField] private GameObject page;
+    [SerializeField] Material NeutralMaterial;
+    [SerializeField] Material CorrectMaterial;
+    [SerializeField] Material IncorrectMaterial;
+    [SerializeField] private List<GameObject> Identifiers = new List<GameObject>();
 
     void OnTriggerEnter(Collider col)
     {
         BadgeType nextType = BadgeType.None;
+        Material nextMaterial = NeutralMaterial;
 
         if (col.gameObject.CompareTag("Badge 3 R"))
             nextType = BadgeType.Right;
@@ -42,12 +44,15 @@ public class BadgeEventSystem : MonoBehaviour
         {
             case BadgeType.Right:
                 RightD.SetActive(true);
+                nextMaterial = CorrectMaterial;
                 break;
             case BadgeType.Wrong1:
                 WrongD1.SetActive(true);
+                nextMaterial = IncorrectMaterial;
                 break;
             case BadgeType.Wrong2:
                 WrongD2.SetActive(true);
+                nextMaterial = IncorrectMaterial;
                 break;
             default:
                 break;
@@ -72,11 +77,17 @@ public class BadgeEventSystem : MonoBehaviour
         }
 
         activeBadges.Add(nextType);
+
+        foreach(var obj in Identifiers)
+        {
+            obj.GetComponent<MeshRenderer>().material = nextMaterial;
+        }
     }
 
     void OnTriggerExit(Collider col)
     {
         BadgeType nextType = BadgeType.None;
+        Material nextMaterial = NeutralMaterial;
 
         if (col.gameObject.CompareTag("Badge 3 R"))
             nextType = BadgeType.Right;
@@ -104,16 +115,30 @@ public class BadgeEventSystem : MonoBehaviour
 
         activeBadges.Remove(nextType);
 
-        if(activeBadges.Count == 0)
+        if (activeBadges.Count == 0)
             BIntro.SetActive(true);
         else
         {
-            if(activeBadges.Contains(BadgeType.Right))
+            if (activeBadges.Contains(BadgeType.Right))
+            {
                 RightD.SetActive(true);
-            else if(activeBadges.Contains(BadgeType.Wrong1))
+                nextMaterial = CorrectMaterial;
+            }
+            else if (activeBadges.Contains(BadgeType.Wrong1))
+            {
                 WrongD1.SetActive(true);
-            else if(activeBadges.Contains(BadgeType.Wrong2))
+                nextMaterial = IncorrectMaterial;
+            }
+            else if (activeBadges.Contains(BadgeType.Wrong2))
+            {
                 WrongD2.SetActive(true);
+                nextMaterial = IncorrectMaterial;
+            }
+        }
+
+        foreach (var obj in Identifiers)
+        {
+            obj.GetComponent<MeshRenderer>().material = nextMaterial;
         }
     }
 }
