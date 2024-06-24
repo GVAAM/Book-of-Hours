@@ -522,14 +522,14 @@ RectTransform:
   m_GameObject: {fileID: 2050724503103187253}
   m_LocalRotation: {x: -0.70254785, y: -0.000000019986393, z: -0.00000022262198, w: 0.7116364}
   m_LocalPosition: {x: 0, y: 0, z: 0.04}
-  m_LocalScale: {x: 0.94974, y: 1, z: 0.50349736}
+  m_LocalScale: {x: 1.305788, y: 1, z: 0.58848774}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5598312199032639907}
   m_LocalEulerAnglesHint: {x: -89.263, y: 0.001, z: -0.001}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 0}
+  m_AnchoredPosition: {x: -0, y: 0.06}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!33 &7744482828966501442
@@ -1632,7 +1632,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5598312198302080625
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2610,7 +2610,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5598312199032639907
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2619,7 +2619,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5598312199032639906}
   m_LocalRotation: {x: 0.6691307, y: 0, z: 0, w: 0.7431448}
-  m_LocalPosition: {x: 0, y: 0, z: 1.675}
+  m_LocalPosition: {x: 0, y: 0, z: 1.823}
   m_LocalScale: {x: 0.18644528, y: 0.1864453, z: 0.18644528}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2628,7 +2628,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 84, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.308}
+  m_AnchoredPosition: {x: -0, y: 0.324}
   m_SizeDelta: {x: 138, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &5598312199032639965
@@ -2694,9 +2694,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'A lovers'' token in the form of a crowned heart with a pin on the reverse.
-
-    The
-    inscription reads:
+    The inscription reads:
 
     <b>herte be treue</b>
 
@@ -2727,8 +2725,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7
-  m_fontSizeBase: 7
+  m_fontSize: 9
+  m_fontSizeBase: 9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2763,7 +2761,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 64.437706, y: 0, z: 64.42463, w: 0}
+  m_margin: {x: 62.559456, y: 0, z: 62.555, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -3208,7 +3206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5598312199135352129
 RectTransform:
   m_ObjectHideFlags: 0
