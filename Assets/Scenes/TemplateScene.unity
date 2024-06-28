@@ -4103,7 +4103,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 480465240987004616, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2392084401353959714, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368062829439617221, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598312198513366681, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598312198721702182, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598312198783594311, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598312198968435870, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598312199094344570, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598312199094344575, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598312199132437394, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598312199565117469, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598312199676244030, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598312200029494976, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5862719805279418214, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8198652087782588839, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4149,9 +4201,33 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5598312199135352128, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5598312198302080624, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5598312199032639906, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
     - targetCorrespondingSourceObject: {fileID: 2187853407325112689, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 941510052}
+    - targetCorrespondingSourceObject: {fileID: 2187853407925135174, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 813066597415895045, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2187853407609347385, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 4601203672666897166, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 9215303871328343894, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 3d21227ab052c4a47920d0c59dfc74e4, type: 3}
 --- !u!1 &941510050 stripped
 GameObject:
