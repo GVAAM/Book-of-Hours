@@ -989,7 +989,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f8f13d1d0e435d34a8b1af82f8262ecc, type: 2}
+  - {fileID: 2100000, guid: 2669389123995d54286073f8fe93496a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1158,8 +1158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3478b0efd1adf94eaa1c819559da9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightMaterial: {fileID: 2100000, guid: 1e97e35ad4392e5488062c94ffe94bea, type: 2}
-  clickedMaterial: {fileID: 2100000, guid: 07880b380456a094f883b6c8873bdd48, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: 74b805bd83a54904a9b2589be970960a, type: 2}
+  clickedMaterial: {fileID: 2100000, guid: 841a00826c9981a4a803f04f89899caf, type: 2}
 --- !u!65 &4877347617626484887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1501,7 +1501,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f8f13d1d0e435d34a8b1af82f8262ecc, type: 2}
+  - {fileID: 2100000, guid: 2669389123995d54286073f8fe93496a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1691,8 +1691,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3478b0efd1adf94eaa1c819559da9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightMaterial: {fileID: 2100000, guid: 1e97e35ad4392e5488062c94ffe94bea, type: 2}
-  clickedMaterial: {fileID: 2100000, guid: 07880b380456a094f883b6c8873bdd48, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: 74b805bd83a54904a9b2589be970960a, type: 2}
+  clickedMaterial: {fileID: 2100000, guid: 841a00826c9981a4a803f04f89899caf, type: 2}
 --- !u!1 &1095450829583176438
 GameObject:
   m_ObjectHideFlags: 0
@@ -3561,7 +3561,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f8f13d1d0e435d34a8b1af82f8262ecc, type: 2}
+  - {fileID: 2100000, guid: 2669389123995d54286073f8fe93496a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3633,7 +3633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7852774083385038970
 Transform:
   m_ObjectHideFlags: 0
@@ -6736,7 +6736,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &165275473555126963
 Transform:
   m_ObjectHideFlags: 0
@@ -9109,7 +9109,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f670383b3e4db0e4f8133710a7d83a3b, type: 2}
+  - {fileID: 2100000, guid: 73ffb25a48420d54ba5f6d76259097b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9278,8 +9278,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3478b0efd1adf94eaa1c819559da9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightMaterial: {fileID: 2100000, guid: 1e97e35ad4392e5488062c94ffe94bea, type: 2}
-  clickedMaterial: {fileID: 2100000, guid: 07880b380456a094f883b6c8873bdd48, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: 7097e2864b69af049a2ec85d0efa95bc, type: 2}
+  clickedMaterial: {fileID: 2100000, guid: c5714381921f8b64284409215179e9d0, type: 2}
 --- !u!65 &6276340051253260441
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9569,7 +9569,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fceb822f6ef266046ba85e938c842903, type: 2}
+  - {fileID: 2100000, guid: 34679da5bab4b9e49aed97afc5e5da46, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9644,10 +9644,34 @@ MonoBehaviour:
       m_Calls: []
   OnPointerOver:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8789491072204821415}
+        m_TargetAssemblyTypeName: MaterialSwitcher, Assembly-CSharp
+        m_MethodName: TurnOnHighlight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnPointerExit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8789491072204821415}
+        m_TargetAssemblyTypeName: MaterialSwitcher, Assembly-CSharp
+        m_MethodName: TurnOffHighlight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnPointerClick:
     m_PersistentCalls:
       m_Calls:
@@ -9675,9 +9699,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8789491072204821415}
+        m_TargetAssemblyTypeName: MaterialSwitcher, Assembly-CSharp
+        m_MethodName: TurnOnClickedMaterial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnPointerUnclick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8789491072204821415}
+        m_TargetAssemblyTypeName: MaterialSwitcher, Assembly-CSharp
+        m_MethodName: TurnOffClickedMaterial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8789491072204821415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9690,8 +9738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3478b0efd1adf94eaa1c819559da9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightMaterial: {fileID: 2100000, guid: 1e97e35ad4392e5488062c94ffe94bea, type: 2}
-  clickedMaterial: {fileID: 2100000, guid: 07880b380456a094f883b6c8873bdd48, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: 89a7a0fc60a77524e94d3235d4f49bd1, type: 2}
+  clickedMaterial: {fileID: 2100000, guid: 21a1e04055f24564eb3d66d64da2ec04, type: 2}
 --- !u!65 &1861624423194916055
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9777,7 +9825,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 648df2e1ea96b2f44aa8caac724d10ce, type: 2}
+  - {fileID: 2100000, guid: ee12308f658457f4991b4a05df848804, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9852,10 +9900,34 @@ MonoBehaviour:
       m_Calls: []
   OnPointerOver:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6049173994246198608}
+        m_TargetAssemblyTypeName: MaterialSwitcher, Assembly-CSharp
+        m_MethodName: TurnOnHighlight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnPointerExit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6049173994246198608}
+        m_TargetAssemblyTypeName: MaterialSwitcher, Assembly-CSharp
+        m_MethodName: TurnOffHighlight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnPointerClick:
     m_PersistentCalls:
       m_Calls:
@@ -9883,9 +9955,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6049173994246198608}
+        m_TargetAssemblyTypeName: MaterialSwitcher, Assembly-CSharp
+        m_MethodName: TurnOnClickedMaterial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnPointerUnclick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6049173994246198608}
+        m_TargetAssemblyTypeName: MaterialSwitcher, Assembly-CSharp
+        m_MethodName: TurnOffClickedMaterial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6049173994246198608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9898,8 +9994,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3478b0efd1adf94eaa1c819559da9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightMaterial: {fileID: 2100000, guid: 1e97e35ad4392e5488062c94ffe94bea, type: 2}
-  clickedMaterial: {fileID: 2100000, guid: 07880b380456a094f883b6c8873bdd48, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: 3aa2c8d17eb45974896caece97925b55, type: 2}
+  clickedMaterial: {fileID: 2100000, guid: fb64a03544eaf1240ada8f622ea6dce0, type: 2}
 --- !u!65 &7506917850602283401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12209,7 +12305,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f670383b3e4db0e4f8133710a7d83a3b, type: 2}
+  - {fileID: 2100000, guid: 73ffb25a48420d54ba5f6d76259097b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12378,8 +12474,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3478b0efd1adf94eaa1c819559da9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightMaterial: {fileID: 2100000, guid: 1e97e35ad4392e5488062c94ffe94bea, type: 2}
-  clickedMaterial: {fileID: 2100000, guid: 07880b380456a094f883b6c8873bdd48, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: 7097e2864b69af049a2ec85d0efa95bc, type: 2}
+  clickedMaterial: {fileID: 2100000, guid: c5714381921f8b64284409215179e9d0, type: 2}
 --- !u!65 &6856293548396243478
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13138,7 +13234,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f670383b3e4db0e4f8133710a7d83a3b, type: 2}
+  - {fileID: 2100000, guid: 73ffb25a48420d54ba5f6d76259097b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13307,8 +13403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3478b0efd1adf94eaa1c819559da9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightMaterial: {fileID: 2100000, guid: 1e97e35ad4392e5488062c94ffe94bea, type: 2}
-  clickedMaterial: {fileID: 2100000, guid: 07880b380456a094f883b6c8873bdd48, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: 7097e2864b69af049a2ec85d0efa95bc, type: 2}
+  clickedMaterial: {fileID: 2100000, guid: c5714381921f8b64284409215179e9d0, type: 2}
 --- !u!65 &8788738483867306217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15053,7 +15149,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bc0aba3f953ef184d87b392b738816b9, type: 2}
+  - {fileID: 2100000, guid: 7abd37b51a6262c4e9a9969d7629cc88, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15116,10 +15212,34 @@ MonoBehaviour:
       m_Calls: []
   OnPointerOver:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5834783740238636571}
+        m_TargetAssemblyTypeName: MaterialSwitcher, Assembly-CSharp
+        m_MethodName: TurnOnHighlight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnPointerExit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5834783740238636571}
+        m_TargetAssemblyTypeName: MaterialSwitcher, Assembly-CSharp
+        m_MethodName: TurnOffHighlight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnPointerClick:
     m_PersistentCalls:
       m_Calls:
@@ -15135,9 +15255,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5834783740238636571}
+        m_TargetAssemblyTypeName: MaterialSwitcher, Assembly-CSharp
+        m_MethodName: TurnOnClickedMaterial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnPointerUnclick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5834783740238636571}
+        m_TargetAssemblyTypeName: MaterialSwitcher, Assembly-CSharp
+        m_MethodName: TurnOffClickedMaterial
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5834783740238636571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15150,8 +15294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3478b0efd1adf94eaa1c819559da9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightMaterial: {fileID: 2100000, guid: 1e97e35ad4392e5488062c94ffe94bea, type: 2}
-  clickedMaterial: {fileID: 2100000, guid: 07880b380456a094f883b6c8873bdd48, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: d815d699f43a44c4e956234f6b652b3e, type: 2}
+  clickedMaterial: {fileID: 2100000, guid: e058635fc37c02b468143e4c6a87dd3d, type: 2}
 --- !u!65 &3833421560543018365
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15789,7 +15933,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f670383b3e4db0e4f8133710a7d83a3b, type: 2}
+  - {fileID: 2100000, guid: 73ffb25a48420d54ba5f6d76259097b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15979,8 +16123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3478b0efd1adf94eaa1c819559da9f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightMaterial: {fileID: 2100000, guid: 1e97e35ad4392e5488062c94ffe94bea, type: 2}
-  clickedMaterial: {fileID: 2100000, guid: 07880b380456a094f883b6c8873bdd48, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: 7097e2864b69af049a2ec85d0efa95bc, type: 2}
+  clickedMaterial: {fileID: 2100000, guid: c5714381921f8b64284409215179e9d0, type: 2}
 --- !u!1 &8632092784673513419
 GameObject:
   m_ObjectHideFlags: 0
