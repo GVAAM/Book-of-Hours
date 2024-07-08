@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f670383b3e4db0e4f8133710a7d83a3b, type: 2}
+  - {fileID: 2100000, guid: 73ffb25a48420d54ba5f6d76259097b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -148,7 +148,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8355774344905662050}
         m_TargetAssemblyTypeName: HandMovementManager, Assembly-CSharp
-        m_MethodName: SetUpMovement
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -566,7 +566,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f670383b3e4db0e4f8133710a7d83a3b, type: 2}
+  - {fileID: 2100000, guid: 73ffb25a48420d54ba5f6d76259097b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -650,7 +650,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8355774344905662050}
         m_TargetAssemblyTypeName: HandMovementManager, Assembly-CSharp
-        m_MethodName: SetRightMovement
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1004,7 +1004,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f670383b3e4db0e4f8133710a7d83a3b, type: 2}
+  - {fileID: 2100000, guid: 73ffb25a48420d54ba5f6d76259097b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1088,7 +1088,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8355774344905662050}
         m_TargetAssemblyTypeName: HandMovementManager, Assembly-CSharp
-        m_MethodName: SetDownMovement
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1321,7 +1321,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f670383b3e4db0e4f8133710a7d83a3b, type: 2}
+  - {fileID: 2100000, guid: 73ffb25a48420d54ba5f6d76259097b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1405,7 +1405,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8355774344905662050}
         m_TargetAssemblyTypeName: HandMovementManager, Assembly-CSharp
-        m_MethodName: SetForwardMovement
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1601,7 +1601,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f670383b3e4db0e4f8133710a7d83a3b, type: 2}
+  - {fileID: 2100000, guid: 73ffb25a48420d54ba5f6d76259097b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1685,7 +1685,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8355774344905662050}
         m_TargetAssemblyTypeName: HandMovementManager, Assembly-CSharp
-        m_MethodName: SetBackwardsMovement
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1881,7 +1881,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f670383b3e4db0e4f8133710a7d83a3b, type: 2}
+  - {fileID: 2100000, guid: 73ffb25a48420d54ba5f6d76259097b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1965,7 +1965,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8355774344905662050}
         m_TargetAssemblyTypeName: HandMovementManager, Assembly-CSharp
-        m_MethodName: SetLeftMovement
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
