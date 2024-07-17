@@ -168,6 +168,7 @@ public class PhysicsPointer : MonoBehaviour, BaseInteractor
 
     void UpdateLength()
     {
+        StaticDebugText.AddDebugMessageForFrame(startPointObj.transform.position.ToString());
         lineRenderer.SetPosition(0, startPointObj.transform.position);
         lineRenderer.SetPosition(1, foundEndPoint);
     }

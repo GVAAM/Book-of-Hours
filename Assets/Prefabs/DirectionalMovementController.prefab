@@ -148,7 +148,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8355774344905662050}
         m_TargetAssemblyTypeName: HandMovementManager, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: SetUpMovement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -650,7 +650,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8355774344905662050}
         m_TargetAssemblyTypeName: HandMovementManager, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: SetRightMovement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1088,7 +1088,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8355774344905662050}
         m_TargetAssemblyTypeName: HandMovementManager, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: SetDownMovement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1405,7 +1405,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8355774344905662050}
         m_TargetAssemblyTypeName: HandMovementManager, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: SetForwardMovement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1685,7 +1685,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8355774344905662050}
         m_TargetAssemblyTypeName: HandMovementManager, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: SetBackwardsMovement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1965,7 +1965,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8355774344905662050}
         m_TargetAssemblyTypeName: HandMovementManager, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: SetLeftMovement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
